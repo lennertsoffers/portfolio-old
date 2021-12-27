@@ -2,10 +2,19 @@ let root = document.documentElement;
 
 let from = 0;
 let to = 0;
-let page = 0;
+let page = undefined;
 const amountOfPages = document.getElementById("pages").childElementCount;
 
 let scrolling = false;
+
+window.addEventListener("load", () => {
+    if (sessionStorage.getItem("page") == null) {
+        page = 0;
+    } else {
+        page = parseInt(sessionStorage.getItem("page"), 10);
+    }
+    console.log(page);
+});
 
 document.addEventListener("wheel", (e) => {
     if (!scrolling) {
@@ -40,9 +49,11 @@ function horizontalScroll(forwards) {
     if (forwards) {
         to -= 100;
         page += 1;
+        sessionStorage.setItem("page", page);
     } else {
         to += 100;
         page -= 1;
+        sessionStorage.setItem("page", page);
     }
 
     root.style.setProperty("--to", `${to}vw`);
