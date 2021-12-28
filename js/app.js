@@ -1,2 +1,3 @@
 CreateNav.init();
-Scroller.init();
+Scroller.enable();
+ViewContents.init();

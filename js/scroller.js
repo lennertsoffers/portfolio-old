@@ -6,21 +6,23 @@ const Scroller = (function () {
     let amountOfPages = undefined;
     let scrolling = false;
 
-    function init() {
+    function enable() {
         amountOfPages = document.getElementById("pages").childElementCount;
 
-        document.addEventListener("wheel", (e) => {
-            if (!scrolling) {
-                if (e.deltaY === 100 && page < amountOfPages - 1) {
-                    page++;
-                    scrollTo(page);
-                } else if (e.deltaY === -100 && page > 0) {
-                    page--;
-                    scrollTo(page);
-                }
-            }
-        });
+        document.addEventListener("wheel", _scrollCallback);
     }
+
+    const _scrollCallback = (e) => {
+        if (!scrolling) {
+            if (e.deltaY === 100 && page < amountOfPages - 1) {
+                page++;
+                scrollTo(page);
+            } else if (e.deltaY === -100 && page > 0) {
+                page--;
+                scrollTo(page);
+            }
+        }
+    };
 
     function scrollTo(p) {
         if (!scrolling) {
@@ -46,8 +48,13 @@ const Scroller = (function () {
         }
     }
 
+    function disable() {
+        document.removeEventListener("wheel", _scrollCallback);
+    }
+
     return {
-        init: init,
+        enable: enable,
+        disable: disable,
         scrollTo: scrollTo,
     };
 })();

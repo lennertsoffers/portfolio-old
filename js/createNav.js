@@ -12,6 +12,7 @@ const CreateNav = (function () {
 
         document.querySelectorAll(".nav-link").forEach((e) => {
             e.addEventListener("click", (element) => {
+                Scroller.enable();
                 Scroller.scrollTo(element.target.getAttribute("data-page"));
             });
         });
