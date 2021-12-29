@@ -8,8 +8,12 @@ const Scroller = (function () {
 
     function enable() {
         amountOfPages = document.getElementById("pages").childElementCount;
-
+        document.body.style.overflowY = "hidden";
         document.addEventListener("wheel", _scrollCallback);
+        document.querySelectorAll(".page-scroll>h1").forEach((e) => {
+            e.style.animation = "";
+            e.style.height = "70px";
+        });
     }
 
     const _scrollCallback = (e) => {
@@ -43,6 +47,15 @@ const Scroller = (function () {
             setTimeout(() => {
                 document.getElementById("pages").style.left = `${to}vw`;
                 document.getElementById("pages").style.animation = "";
+
+                document.querySelectorAll(".page-content").forEach((e) => {
+                    e.style.display = "none";
+                });
+                document.querySelectorAll("div.page-scroll").forEach((e) => {
+                    e.style.height = "100vh";
+                    e.querySelector("h1").style.display = "block";
+                });
+
                 scrolling = false;
             }, 1500);
         }

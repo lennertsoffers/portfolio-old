@@ -5,7 +5,7 @@ const CreateNav = (function () {
         let pageNum = 0;
         document.querySelectorAll("#pages div>h1").forEach((e) => {
             navUl.innerHTML += `<li class="nav-item">
-                    <a class="nav-link active" aria-current="page" data-page="${pageNum}" href="#">${e.innerText}</a>
+                    <a class="nav-link" aria-current="page" data-page="${pageNum}" href="#">${e.innerText}</a>
                 </li>`;
             pageNum++;
         });
@@ -14,6 +14,8 @@ const CreateNav = (function () {
             e.addEventListener("click", (element) => {
                 Scroller.enable();
                 Scroller.scrollTo(element.target.getAttribute("data-page"));
+                document.querySelector("#navBg div").style.animation =
+                    "animateNavBgUp 1s ease-out forwards";
             });
         });
 
