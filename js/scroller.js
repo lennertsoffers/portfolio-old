@@ -19,11 +19,11 @@ const Scroller = (function () {
     const _scrollCallback = (e) => {
         if (!scrolling) {
             if (e.deltaY > 0 && page < amountOfPages - 1) {
-                const newPage = page + 1;
+                const newPage = parseInt(page, 10) + 1;
                 scrollTo(newPage);
                 page = newPage;
             } else if (e.deltaY < 0 && page > 0) {
-                const newPage = page - 1;
+                const newPage = parseInt(page, 10) - 1;
                 scrollTo(newPage);
                 page = newPage;
             }
@@ -31,6 +31,7 @@ const Scroller = (function () {
     };
 
     function scrollTo(p) {
+        console.log("scrollTo page: " + p);
         if (!scrolling) {
             if (p != page) {
                 root.style.setProperty("--from", `${to}vw`);
@@ -77,9 +78,14 @@ const Scroller = (function () {
         document.removeEventListener("wheel", _scrollCallback);
     }
 
+    function getPage() {
+        return page;
+    }
+
     return {
         enable: enable,
         disable: disable,
         scrollTo: scrollTo,
+        getPage: getPage,
     };
 })();

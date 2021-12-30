@@ -12,18 +12,22 @@ const CreateNav = (function () {
 
         document.querySelectorAll(".nav-link").forEach((e) => {
             e.addEventListener("click", (element) => {
-                Scroller.enable();
-                Scroller.scrollTo(element.target.getAttribute("data-page"));
+                const pageId = element.target.getAttribute("data-page");
 
-                document.querySelectorAll(".nav-link").forEach((link) => {
-                    link.removeAttribute("disabled");
-                });
-                element.target.setAttribute("disabled", "true");
+                if (pageId != Scroller.getPage()) {
+                    Scroller.enable();
+                    Scroller.scrollTo(pageId);
 
-                if (ViewContents.isViewingContent()) {
-                    document.querySelector("#navBg div").style.animation =
-                        "animateNavBgUp 1s ease-out";
-                    ViewContents.stopViewingContent();
+                    document.querySelectorAll(".nav-link").forEach((link) => {
+                        link.removeAttribute("disabled");
+                    });
+                    element.target.setAttribute("disabled", "true");
+
+                    if (ViewContents.isViewingContent()) {
+                        document.querySelector("#navBg div").style.animation =
+                            "animateNavBgUp 1s ease-out";
+                        ViewContents.stopViewingContent();
+                    }
                 }
             });
         });
