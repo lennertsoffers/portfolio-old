@@ -14,8 +14,17 @@ const CreateNav = (function () {
             e.addEventListener("click", (element) => {
                 Scroller.enable();
                 Scroller.scrollTo(element.target.getAttribute("data-page"));
-                document.querySelector("#navBg div").style.animation =
-                    "animateNavBgUp 1s ease-out forwards";
+
+                document.querySelectorAll(".nav-link").forEach((link) => {
+                    link.removeAttribute("disabled");
+                });
+                element.target.setAttribute("disabled", "true");
+
+                if (ViewContents.isViewingContent()) {
+                    document.querySelector("#navBg div").style.animation =
+                        "animateNavBgUp 1s ease-out";
+                    ViewContents.stopViewingContent();
+                }
             });
         });
 

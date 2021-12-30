@@ -31,162 +31,556 @@
         </nav>
     </header>
     <div id="pages">
-        <div id="page1" class="page">
+        <div id="page0" class="page">
             <div class="d-flex justify-content-center align-items-center page-scroll">
-                <h1 class="page-scroll-title">About me</h1>
+                <div>
+                    <h1 class="page-scroll-title">About me</h1>
+                    <p>
+                        View page <i class="fas fa-arrow-circle-right"></i></p>
+                    </p>
+                    <p>
+                        I am an enthusiastic, motivated and hardworking student who is very interested in creating
+                        backend
+                        applications, but I am also not
+                        averse to a bit of front end. In my free time I like to work on my own open source projects.
+                    </p>
+                </div>
             </div>
             <div class="page-content">
-                <section>
+                <article>
                     <h1 class="mb-5">About me</h1>
-                    <h2>A motivated student</h2>
+                    <div class="row justify-content-between">
+                        <section class="col-7">
+                            <h2>An enthusiastic student</h2>
+                            <p>
+                                I am a motivated student of applied information science at Thomas More. In my free time,
+                                I
+                                like to work on
+                                the various projects I have.
+                                In addition, I am a leader at the Scouts on Sundays. I regularly take part in hackathons
+                                together with friends from
+                                school and have already won a few. I am looking for opportunities where I can learn new
+                                concepts and gain work
+                                experience.
+                            </p>
+                            <p>
+                                I am also someone who has quite a lot of experience working in a team. During project
+                                weeks at school we worked in
+                                groups, but also during the hackathons I participated in, it was also as a group. In
+                                this teamwork, I always take on one of two roles: I can
+                                find myself in the role of a
+                                puller, but usually I take on the executing role.
+                            </p>
+                        </section>
+                        <section id="photo" class="col-4">
+                            <img src="assets/profilePic.png" alt="picture of Lennert Soffers">
+                        </section>
+                        <section class="col-4">
+                            <h2>Personal Information</h2>
+                            <ul class="list-unstyled">
+                                <li class="row">
+                                    <div class="col-6">Name:</div>
+                                    <div class="col-6">Lennert Soffers</div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-6">Age:</div>
+                                    <div class="col-6" id="age"></div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-6">Country:</div>
+                                    <div class="col-6">Belgium</div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-6">Email:</div>
+                                    <div class="col-6"><a
+                                            href="mailto:lennert.soffers@hotmial.com">lennert.soffers@hotmail.com</a>
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-6">Occupation:</div>
+                                    <div class="col-6">Student</div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <section id="soft-skills" class="mt-5">
+                        <h2>Soft Skills</h2>
+                        <ul class="row list-unstyled mt-3">
+                            <li class="col-4">
+                                <div>
+                                    <h3>Thorough</h3>
+                                    <p>
+                                        I use my knowledge to work as thoroughly as possible. I don't like to do things
+                                        half-heartedly.
+                                </div>
+                            </li>
+                            <li class="col-4">
+                                <div>
+                                    <h3>Punctual</h3>
+                                    <p>
+                                        Being late is not my thing, I am hardly ever late.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="col-4">
+                                <div>
+                                    <h3>Enthusiastic</h3>
+                                    <p>
+                                        When I go to school or to work, I do so with full enthusiasm.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <div class="page" id="page1">
+            <div class="d-flex justify-content-center align-items-center page-scroll">
+                <div class="page-scroll-content">
+                    <h1 class="page-scroll-title">Portfolio</h1>
                     <p>
-                        I'm a hardworking developer with a strong interest in new technologies and enjoy working on
-                        group projects.
-
-                        During my time as a student at Thomas More, I've been busy with lots of things:
-
-                    <ul>
-                        <li>
-                            Participant in several hackathons and won a few, including RealDolmen's "de Warmest
-                            Hackathon" and "Hack The Future"
-                            from Cronos.
-                        </li>
-                        <li>
-                            President of the student council of IT Factory, member of the General Student Council (ASR),
-                            delegate of Thomas More
-                            Kempen in the Flemish Association of Students (VVS).
-                        </li>
-                        <li>
-                            Participant in the ICE Honours program of ICE Cube (ICE = Innovation, Creativity &
-                            Entrepreneurship). Where I was the
-                            'President of Enactus Thomas More Kempen', which meant that I kept oversight and reported to
-                            Enactus Belgium.
-                        </li>
-                    </ul>
+                        View page <i class="fas fa-arrow-circle-right"></i></p>
                     </p>
-                </section>
-                <section>
-                    <h2>Personal Information</h2>
-                    <ul>
-                        <li class="row">
-                            <div class="col-6">Name:</div>
-                            <div class="col-6">Lennert Soffers</div>
-                        </li>
-                        <li class="row">
-                            <div class="col-6">Age:</div>
-                            <div class="col-6" id="age"></div>
-                        </li>
-                        <li class="row">
-                            <div class="col-6">Country:</div>
-                            <div class="col-6">Belgium</div>
-                        </li>
-                        <li class="row">
-                            <div class="col-6">Email:</div>
-                            <div class="col-6"><a
-                                    href="mailto:lennert.soffers@hotmial.com">lennert.soffers@hotmial.com</a></div>
-                        </li>
-                        <li class="row">
-                            <div class="col-6">Occupation:</div>
-                            <div class="col-6">Student</div>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Soft Skills</h2>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, tenetur eos sapiente
-                    inventore quia doloremque consectetur ea iste. Quo a, natus quas alias dignissimos, quisquam non
-                    soluta magnam ex quos temporibus quod nostrum minima blanditiis. Accusantium, facilis, rem amet
-                    beatae consequuntur distinctio deserunt necessitatibus, animi cupiditate expedita et dolorum fuga
-                    praesentium. Deserunt numquam sint repellendus ex consequuntur voluptates alias sunt delectus atque!
-                    Quod animi dolores nam unde iste dolore sint sit mollitia, expedita incidunt illo libero pariatur
-                    laborum reiciendis doloribus ea praesentium provident maxime doloremque, eos fugit tenetur. Alias
-                    doloribus debitis maxime temporibus corrupti asperiores quasi cum facilis sunt ipsum error deserunt
-                    vel, corporis soluta libero totam officia eos illo velit excepturi non adipisci unde laboriosam
-                    assumenda. Rem quos excepturi quasi quod exercitationem dolor sit voluptate saepe placeat officiis
-                    culpa distinctio similique id, quam, deserunt, ipsam impedit ullam molestiae dignissimos!
-                    Voluptatibus quidem ipsa modi excepturi? Neque explicabo, nihil quam sapiente hic minima ipsum
-                    accusamus dolorem? Exercitationem, minima veniam consequatur debitis at error aspernatur id
-                    assumenda hic sit ratione expedita dolorum? Cumque similique, nemo fuga nihil eaque sit earum
-                    voluptates quam quisquam deserunt consectetur, neque fugit reprehenderit obcaecati eius, beatae
-                    consequatur molestiae? Ea, molestiae illum maiores, explicabo vel nisi minima necessitatibus iste
-                    sed sint animi nemo commodi? Harum, ratione. Tenetur temporibus laudantium eos praesentium commodi
-                    aperiam. Quasi beatae velit ducimus id, obcaecati, aliquam officiis blanditiis, aspernatur
-                    reprehenderit porro maxime hic nemo ipsa quam. Dolorum, sit facere mollitia, quo voluptas aperiam
-                    voluptate aspernatur nihil, reiciendis ipsam illo eaque reprehenderit quia aliquam nam
-                    necessitatibus sequi laudantium nostrum eligendi. Suscipit eveniet maxime quia totam voluptates,
-                    dignissimos odio neque adipisci hic. Impedit dolorem corrupti itaque, praesentium tenetur reiciendis
-                    inventore id architecto. Voluptatibus suscipit enim accusantium est sunt modi, quisquam veritatis a
-                    nemo autem quam, ratione similique sint exercitationem. Animi voluptates tempore nemo dignissimos!
-                    Beatae iste voluptatum aut similique quidem ea iure libero alias minima, ducimus qui nam aliquam
-                    quaerat consequuntur quasi minus, iusto delectus? Dolorem illo architecto aspernatur dolore possimus
-                    fuga nulla accusamus quidem debitis repellendus temporibus illum voluptatibus, hic quam sed ea
-                    eligendi inventore quisquam officia! Aliquid fugiat ducimus unde quasi delectus ipsum totam enim
-                    nam, cum dolor qui, modi quae exercitationem explicabo minima at velit earum ea eos! Repudiandae,
-                    nulla velit! Provident aliquam consequatur nemo obcaecati. Ipsum tempora blanditiis ipsa recusandae
-                    pariatur temporibus ad quisquam, molestiae possimus aperiam facilis voluptate error vero tenetur.
-                    Ducimus, architecto vero ad facilis quidem cupiditate temporibus error vel ratione. Dolorem,
-                    repellat! Sunt quam, repellat molestiae tempore eum distinctio deserunt dolorum quis architecto ex
-                    nam obcaecati illo, consectetur numquam iusto? Amet veritatis, nihil, facilis, sunt molestias
-                    perspiciatis consequatur fuga eaque iusto voluptatum vel nemo tempora cupiditate aliquam labore
-                    tenetur omnis culpa quis ab praesentium ipsa. Ut repellendus perferendis delectus nesciunt
-                    praesentium ea cum sequi sint nobis maiores eos, obcaecati deleniti nisi dolore asperiores unde
-                    officia? Commodi fuga, nam earum, voluptatum soluta incidunt quaerat explicabo amet totam in
-                    nesciunt mollitia nostrum deleniti vel? Obcaecati labore deserunt sunt veniam quisquam! Unde dolorum
-                    sit molestias eum, necessitatibus aut itaque aspernatur asperiores autem ducimus aliquid, cumque
-                    distinctio magni a inventore recusandae facere odio! Dolorum omnis magnam cum corporis voluptatibus
-                    pariatur error. Qui aspernatur illo distinctio quisquam adipisci? Odit ut ipsum vitae reiciendis cum
-                    voluptate blanditiis sint rem soluta similique, alias veritatis quisquam non neque enim modi
-                    doloremque repellat esse, asperiores aliquam! Voluptatem, magnam quos! Beatae, atque modi distinctio
-                    earum, incidunt accusantium voluptatibus ratione adipisci nisi ea nulla nemo alias numquam et cumque
-                    vel voluptatum quos! Non aliquam assumenda fugit quaerat, dolores, illum ad quidem adipisci eveniet
-                    at, animi tempore inventore quia quis quae. Maiores veniam aut sed alias laborum officia omnis illum
-                    labore quod quidem, necessitatibus expedita sunt voluptates voluptas dolorum nihil exercitationem
-                    quis aliquam rerum quos perspiciatis blanditiis laudantium nisi? Ipsa dolorum voluptates ad ipsam
-                    quidem ut! Ex dignissimos natus ipsam voluptatem quia nemo itaque, alias error ad autem laudantium
-                    adipisci excepturi aspernatur. Nulla, dicta. Reprehenderit quisquam similique magni cum ex nihil,
-                    officia laudantium quis laborum odit, praesentium, ipsam architecto sed! Molestiae nulla tempora
-                    non, asperiores ipsum quisquam? Fugit esse ipsum consequatur quia, dolore unde repellendus molestias
-                    sequi, quidem beatae eius! Impedit sapiente cupiditate quas alias repudiandae sit voluptatibus
-                    temporibus non officia harum. Dolore similique unde excepturi obcaecati magnam asperiores. Assumenda
-                    culpa neque tenetur, dolorem aliquid et officiis consequuntur. Quaerat eum aut cumque reiciendis?
-                    Vitae, magnam ad iusto ut porro voluptate autem unde provident odio reiciendis vel. Magnam
-                    voluptatum iure maiores, culpa suscipit, quisquam possimus unde impedit eius temporibus voluptate
-                    et, facilis incidunt fugiat quo nulla? Impedit dolore nisi sit dolor id velit saepe distinctio sint
-                    quam voluptas voluptatum quas, odio sapiente cum perferendis quibusdam nobis minima inventore eos
-                    adipisci et? Vero laborum consequatur qui reiciendis et aspernatur odit quidem deserunt ratione
-                    possimus. Optio reprehenderit obcaecati laborum sunt. Vel, accusantium itaque? Libero est iste nulla
-                    ipsum veniam adipisci molestiae obcaecati, quidem mollitia laudantium aliquam voluptate perferendis
-                    quas quaerat, tempore dolorem amet id accusantium temporibus dignissimos perspiciatis cupiditate.
-                    Quaerat sed, delectus inventore esse provident, alias consectetur maiores quisquam unde porro odio,
-                    velit enim! Fugiat atque ad animi, dolore fugit eaque iusto id ullam temporibus. Consectetur totam
-                    debitis officiis, nisi odit temporibus recusandae, quasi similique expedita magnam, corporis vitae
-                    quia ut tempore. Atque totam culpa, aperiam dolorem excepturi asperiores quam. Dolores ut corrupti
-                    voluptatibus temporibus, rem cumque, assumenda id amet tempore cupiditate iste consequatur iusto
-                    quia repellat molestiae maiores harum porro. Minima numquam quasi modi corrupti. Laboriosam,
-                    officiis veniam! Maxime vero blanditiis doloribus minima a repudiandae aliquam, facilis
-                    reprehenderit culpa ducimus eum enim perferendis necessitatibus ab dolorem veritatis. Repudiandae
-                    dignissimos voluptas voluptatem iusto animi, tempore esse numquam eaque. Alias impedit, voluptatum
-                    magnam obcaecati aperiam a commodi corrupti tempore! Nihil molestiae illum labore possimus. Quis
-                    pariatur eveniet doloribus dolor eum, animi assumenda vitae provident eius odit nostrum totam vero
-                    eaque aut repellendus ex distinctio alias qui nobis molestias beatae cumque fuga veniam odio. Libero
-                    eligendi ipsam dolorum quibusdam sunt. Veniam expedita animi provident ut quod voluptas deserunt
-                    magnam, dolore omnis iste temporibus dolorum maiores fugiat! Blanditiis ut debitis, accusantium
-                    maiores deleniti enim dignissimos nulla quos?
-                </section>
-                <section>
-                    <h2>Hard Skills</h2>
-                </section>
+                    <p>
+                        Here you can find the projects I have already worked on. These projects vary from tasks for
+                        school to own projects
+                        to hackathons in which I have participated.
+                    </p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class=" d-flex flex-column justify-content-between">
+                    <article>
+                        <h1 class="mb-5">Portfolio</h1>
+                        <div class="row justify-content-between">
+                            <section>
+                                <h2>Hackathons</h2>
+                                <p>
+                                    In my spare time I participate in hackathons. I really enjoy participating in them
+                                    because you learn so much from them.
+                                    Not necessarily in terms of hard skills but you learn how to deal with teamwork. I
+                                    strongly believe that 1 and 1 equals
+                                    3 if the whole team gives its best.
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <h3>Ypto Hackathon</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h4>Info</h4>
+                                                <ul>
+                                                    <li>
+                                                        <span>Organisation:</span>
+                                                        <span>Ypto / Microsoft</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Team members:</span>
+                                                        <span>5</sp>
+                                                    </li>
+                                                    <li>
+                                                        <span>Timeframe:</span>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used technologies:</span>
+                                                        <span>PowerApps, Powerpoint</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Rank:</span>
+                                                        <span>First place</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8">
+                                                <h4>Description</h4>
+                                                <p>
+                                                    This was the first hackathon I ever participated in. Here, we had to
+                                                    come
+                                                    up
+                                                    with a solution that would allow us to
+                                                    inventorise the components of a wagon. This was done using
+                                                    Microsoft's
+                                                    PowerApps
+                                                    platform. It was a rather difficult
+                                                    start because we did not yet know how to work with PowerApps, but on
+                                                    day
+                                                    two
+                                                    everything went better. What set our
+                                                    solution apart from others was that our idea went beyond the
+                                                    challenge
+                                                    of
+                                                    inventory. We also thought about how we could
+                                                    link a business model to this and in this way look at what
+                                                    components
+                                                    break down
+                                                    most often under what circumstances. In
+                                                    this way, we can anticipate the problem by finding a solution for
+                                                    the
+                                                    cause of
+                                                    the problem instead of having to replace
+                                                    the component each time. With this solution we won the main prize of
+                                                    the
+                                                    hackathon, a trip to Paris and an exclusive
+                                                    tour of the Microsoft headquarters.
+                                                </p>
+                                                <p>
+                                                    On this website you can find our pitch an the evaluation of the
+                                                    jury: <a href="https://www.ypto.be/hackathon/"
+                                                        target="_blank">www.ypto.be/hackathon</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-images">
+                                            <img src="/assets/ypto.png" alt="team de zachte dolfijntjes">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>Hack The Future</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h4>Info</h4>
+                                                <ul>
+                                                    <li>
+                                                        <span>Organisation:</span>
+                                                        <span>Cronos</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Team members:</span>
+                                                        <span>2</sp>
+                                                    </li>
+                                                    <li>
+                                                        <span>Timeframe:</span>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used technologies:</span>
+                                                        <span>Drupal, PHP, Virtualbox</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Rank:</span>
+                                                        <span>First place</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8">
+                                                <h4>Description</h4>
+                                                <p>
+                                                    Looking back on this hackathon, I found this the most enjoyable. It
+                                                    was
+                                                    a
+                                                    challenging experience but this only made it
+                                                    more fun. In a relatively short time, we had to create a backend for
+                                                    a
+                                                    clue game
+                                                    of which the frontend was already
+                                                    finished. We had to do this with Drupal, a technology that neither I
+                                                    nor
+                                                    my
+                                                    teammate were familiar with. We soon saw the
+                                                    power of Drupal and how it can be used to speed up repetitive work.
+                                                    Although we
+                                                    did not finish all the assignments, we
+                                                    were first in the Drupal challenge.
+                                                </p>
+                                                <p>
+                                                    <a href="https://www.hackthefuture.be/2021/" target="_blank">More
+                                                        information</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row portfolio-images">
+                                            <img class="col-6" src="/assets/htf1.png" alt="screenshot of winners">
+                                            <img class="col-6" src="/assets/htf2.png" alt="screenshot of thola">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>School projects</h2>
+                                <p>
+                                    During my studies at Thomas More, I made various projects. There are several
+                                    projects
+                                    that were judged very well and
+                                    that I am proud of. The most outstanding projects you can see here.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h3>PokePlayer</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h4>Info</h4>
+                                                <ul>
+                                                    <li>
+                                                        <span>Subject:</span>
+                                                        <span>DevOps C# course</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Timeframe:</span>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used technologies:</span>
+                                                        <span>C#, WPF, Dapper micro ORM, Sqlite, PokeAPI, GitHub
+                                                            actions</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="https://youtu.be/KxV8bdUycUU"
+                                                                target="_blank">Showcase</a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span><a href="https://github.com/lennertsoffers/Pokeplayer-v2"
+                                                                target="_blank">Check out on GitHub</a></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8">
+                                                <h4>Description</h4>
+                                                <p>
+                                                    PokePlayer is a WPF application written in C#. It is a game that
+                                                    offers
+                                                    the same
+                                                    functionality as the old Pokemon games
+                                                    on the Nintendo DS. For this application I used the PokeAPI which
+                                                    provides the
+                                                    data. This was my first experience with
+                                                    C# and I learned a lot about it. In addition I used GitHub workflows
+                                                    for
+                                                    the
+                                                    first time, which accelerated the release
+                                                    of the application.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row portfolio-images">
+                                            <img class="col-4" src="/assets/pokeplayer1.png" alt="pokemon battle">
+                                            <img class="col-4" src="/assets/pokeplayer2.png" alt="switch pokemon">
+                                            <img class="col-4" src="/assets/pokeplayer3.png" alt="viewe party">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>Plennert</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h4>Info</h4>
+                                                <ul>
+                                                    <li>
+                                                        <span>Subject:</span>
+                                                        <span>Cordova</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Timeframe:</span>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used technologies:</span>
+                                                        <span>Cordova, HTML, CSS (+Bootstrap), JS, Java Spring</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="http://lennertsoffers.com" target="_blank">More
+                                                                info</a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8">
+                                                <h4>Description</h4>
+                                                <p>
+                                                    Plennert is a calendar application compiled with Cordova. It allows
+                                                    you
+                                                    to
+                                                    plan future deadlines and be reminded of them. For the first time I
+                                                    used the Google speechrecognition plugin for Cordova which was a
+                                                    very
+                                                    interesting technology to work with.
+                                                    I also wrote a RestAPI in Java Spring to interact with the
+                                                    application.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row portfolio-images">
+                                            <img class="col-2" src="/assets/plennert_deadlines.png" alt="deadlines">
+                                            <img class="col-2" src="/assets/plennert_new-deadline-2.png"
+                                                alt="new deadline">
+                                            <img class="col-2" src="/assets/plennert_speech.jpg" alt="speech">
+                                            <img class="col-2" src="/assets/plennert_groups-filter.png"
+                                                alt="groups filter">
+                                            <img class="col-2" src="/assets/plennert_new-group.png" alt="new group">
+                                            <img class="col-2" src="/assets/plennert_about.png" alt="about">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>Animated Treasure Hunt</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h4>Info</h4>
+                                                <ul>
+                                                    <li>
+                                                        <span>Subject:</span>
+                                                        <span>Project application development</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Timeframe:</span>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used technologies:</span>
+                                                        <span>Python Flask, Zappar, ZappWorks studio, JS</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="https://youtu.be/yBTiR71JUbU"
+                                                                target="_blank">Showcase</a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8">
+                                                <h4>Description</h4>
+                                                <p>
+                                                    During the first year's project week, we were challenged to create
+                                                    an
+                                                    augmented
+                                                    reality treasure hunt. For this we
+                                                    worked together with ZappWorks, a software tool in which you can
+                                                    easily
+                                                    write an
+                                                    application and link it to an AR
+                                                    experience. We wrote the backend for this treasure hunt in Python
+                                                    Flask.
+                                                    It
+                                                    became an interactive treasure hunt where
+                                                    attention was also paid to the visual aspect.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h3>PokeBag</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h4>Info</h4>
+                                                <ul>
+                                                    <li>
+                                                        <span>Subject:</span>
+                                                        <span>Windows System Administration</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Timeframe:</span>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used technologies:</span>
+                                                        <span>Powershell, Windows Forms, PokeAPI</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="https://youtu.be/VEIeNQpQB7o"
+                                                                target="_blank">Showcase</a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8">
+                                                <h4>Description</h4>
+                                                <p>
+                                                    PokeBag was the first 'big' application I worked on. It is an
+                                                    application made
+                                                    in Windows Forms and Powershell. PokeBag
+                                                    serves to catalogue Pokemon cards and keep an inventory of them. The
+                                                    app
+                                                    offers
+                                                    the possibility to generate a website as
+                                                    an overview, so the info is nicely displayed. This project was also
+                                                    the
+                                                    first
+                                                    time I came into contact with an API and
+                                                    Json and this knowledge is a foundation that I now use on a daily
+                                                    basis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row portfolio-images">
+                                            <img class="col-5" src="/assets/pokebag1.png" alt="pokebag interface">
+                                            <img class="col-7" src="/assets/pokebag2.png" alt="web-page with pokemons">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Open source</h2>
+                                <p>
+                                    I like to spend my free time working on my own projects. This has taught me a lot
+                                    about
+                                    programming. I have also learned
+                                    to be more independent and to get things done on my own. Because all these projects
+                                    are
+                                    on GitHub, I have gained a lot
+                                    of experience with Github and Git.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h3>Elemental Stones (Minecraft plugin)</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h4>Info</h4>
+                                                <ul>
+                                                    <li>
+                                                        <span>Timeframe:</span>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <span>Used technologies:</span>
+                                                        <span>Java, Spigot API</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="https://github.com/lennertsoffers/ElementalStones"
+                                                                target="_blank">Check out on GitHub</a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-8">
+                                                <h4>Description</h4>
+                                                <p>
+                                                    Elemental Stones is the biggest project I have worked on so far. It
+                                                    is a
+                                                    plugin
+                                                    for the game 'Minecraft' written in
+                                                    Java. The plugin increases the features that the user has in the
+                                                    game
+                                                    and works
+                                                    server-side. While at school we only saw
+                                                    the basics of Java, during this project I have learned a lot about
+                                                    the
+                                                    programming language and I now understand more
+                                                    complicated concepts. Documentation also plays an important role in
+                                                    the
+                                                    creation
+                                                    of plugins, so I focused on this during
+                                                    the project.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row portfolio-images">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </article>
+                    <footer class="d-flex flex-column align-items-center pt-3">
+                        <p>&copy;lennertsoffers - 2022</p>
+                        <p><a href="https://github.com/lennertsoffers/portfolio">source code</a></p>
+                    </footer>
+                </div>
             </div>
         </div>
         <div class="page" id="page2">
-            <div class="d-flex justify-content-center align-items-center page-scroll">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="page-content">
-                <h2>test</h2>
-            </div>
-        </div>
-        <div class="page" id="page3">
             <div class="d-flex justify-content-center align-items-center page-scroll">
                 <h1>Cv</h1>
             </div>
@@ -194,15 +588,6 @@
                 <h2>test</h2>
             </div>
         </div>
-        <!-- <div class="d-flex justify-content-center align-items-center" id="page4">
-            <h1>Page 4</h1>
-        </div>
-        <div class="d-flex justify-content-center align-items-center" id="page5">
-            <h1>Page 5</h1>
-        </div>
-        <div class="d-flex justify-content-center align-items-center" id="page6">
-            <h1>Page 6</h1>
-        </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

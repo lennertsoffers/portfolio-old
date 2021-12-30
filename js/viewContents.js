@@ -1,17 +1,26 @@
 const ViewContents = (function () {
+    let _viewingContent = false;
+
     function init() {
         document.querySelectorAll(".page").forEach((e) => {
             e.addEventListener("click", (element) => {
+                _viewingContent = true;
                 const page = document.querySelector(
                     `#${element.target.closest("div.page").id}`
                 );
                 Scroller.disable();
 
-                page.querySelector("h1").style.animation =
+                page.querySelector(".page-scroll>div").style.animation =
                     "hideTitle 0.5s ease-in-out forwards";
 
                 setTimeout(() => {
+                    page.querySelector(".page-scroll>div").style.display =
+                        "none";
+                }, 1500);
+
+                setTimeout(() => {
                     const content = page.querySelector(".page-content");
+                    content.style.animation = "";
 
                     content.style.display = "block";
 
@@ -29,7 +38,17 @@ const ViewContents = (function () {
         });
     }
 
+    function stopViewingContent() {
+        _viewingContent = false;
+    }
+
+    function isViewingContent() {
+        return _viewingContent;
+    }
+
     return {
         init: init,
+        stopViewingContent: stopViewingContent,
+        isViewingContent: isViewingContent,
     };
 })();
