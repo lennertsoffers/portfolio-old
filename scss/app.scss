@@ -1,12 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&family=Raleway:wght@500&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -61,19 +61,15 @@ body {
 }
 
 #page0 {
-    background-color: #484748;
+    background-color: #05364c;
 }
 
 #page1 {
-    background-color: #68746b;
+    background-color: #064460;
 }
 
 #page2 {
-    background-color: #526773;
-}
-
-#page4 {
-    background-color: #bfbdb1;
+    background-color: #075173;
 }
 
 :root {
@@ -94,11 +90,55 @@ body {
     display: none;
 
     article {
-        margin: 20vh 20vw 100px 20vw;
+        margin: 20vh 10vw 100px 10vw;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+#page0 .page-content {
+    p {
+        font-size: 40px;
+    }
+
+    footer p {
+        font-size: 20px;
     }
 
     h1 {
-        border-bottom: 1px dashed grey;
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        position: relative;
+        height: 20vh;
+
+        div:first-child {
+            padding-right: 30px;
+        }
+
+        div:last-child {
+            top: 0;
+            left: 20px;
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.25;
+            padding-top: 0;
+            margin-top: 0;
+            line-height: 1.1;
+            font-weight: bold;
+        }
     }
 }
 
@@ -109,7 +149,7 @@ body {
     justify-content: end;
 
     > div {
-        background-color: #212121;
+        background-color: #04283a;
         width: 100vw;
         height: 0vh;
     }
@@ -141,19 +181,18 @@ body {
 
 .page-scroll {
     > div {
-        height: 200px;
         overflow: hidden;
         max-width: 40vw;
 
         > h1 {
-            font-size: 65px;
+            font-size: 75px;
         }
     }
 }
 
 @keyframes hideTitle {
     from {
-        height: 200px;
+        height: 250px;
     }
 
     to {
@@ -173,20 +212,18 @@ body {
     }
 }
 
-#photo {
+#photoWrapper {
     position: relative;
 
-    img {
+    #photo {
+        position: relative;
         width: 100%;
         height: auto;
+        background-color: #fff;
     }
 }
 
 #soft-skills {
-    p {
-        text-align: justify;
-    }
-
     li:first-child > div {
         margin-right: 10px;
     }
@@ -239,6 +276,56 @@ img {
     }
 }
 
-footer {
-    background-color: #fff;
+// TIMELINE
+
+#portfolio {
+    margin-bottom: 100vh;
+    position: relative;
+
+    display: flex;
+
+    #timeline-vertical {
+        background-color: #fff;
+        width: 1px;
+        height: 100%;
+    }
+
+    .timeline-item {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 100px;
+
+        .timeline-horizontal {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 30px;
+
+            .timeline-horizontal-text {
+                margin-bottom: 5px;
+                text-align: center;
+            }
+
+            .timeline-horizontal-bar {
+                background-color: #fff;
+                height: 1px;
+            }
+        }
+
+        #id1 {
+            width: 10vw;
+        }
+
+        #id2 {
+            width: 30vw;
+        }
+
+        #id3 {
+            width: 20vw;
+        }
+
+        .timeline-activity {
+            max-width: 40vw;
+        }
+    }
 }

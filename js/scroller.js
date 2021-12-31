@@ -12,7 +12,7 @@ const Scroller = (function () {
         document.addEventListener("wheel", _scrollCallback);
         document.querySelectorAll(".page-scroll>div").forEach((e) => {
             e.style.animation = "";
-            e.style.height = "200px";
+            e.style.height = "250px";
         });
     }
 
