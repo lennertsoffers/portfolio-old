@@ -241,10 +241,7 @@ body {
 img {
     width: 100%;
     height: auto;
-}
-
-.portfolio-images {
-    margin-top: 30px;
+    border-radius: 15px;
 }
 
 #page1 {
@@ -280,8 +277,6 @@ img {
 
 #portfolio {
     margin-bottom: 100vh;
-    position: relative;
-
     display: flex;
 
     #timeline-vertical {
@@ -326,6 +321,56 @@ img {
 
         .timeline-activity {
             max-width: 40vw;
+
+            .used-technologies {
+                p {
+                    margin-right: 20px;
+                    padding: 0 5px;
+                    border-radius: 5px;
+                    background-color: rgba($color: #fff, $alpha: 0.25);
+                }
+            }
+        }
+
+        .modal {
+            .modal-dialog {
+                display: flex;
+                top: 10vh;
+                height: 70vh;
+
+                width: 70vw;
+                max-width: none;
+
+                .modal-content {
+                    background-color: #064460;
+                    box-shadow: 5px 5px 5px rgba($color: #000, $alpha: 0.1);
+                    border-radius: 15px;
+                    padding: 20px;
+
+                    .modal-contents {
+                        .modal-info {
+                            ul {
+                                padding: 0;
+                                list-style: none;
+                                margin-top: 10%;
+                                font-size: 18px;
+
+                                span:first-child {
+                                    font-weight: bold;
+
+                                    > a {
+                                        color: #fff;
+                                    }
+
+                                    > a:hover {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

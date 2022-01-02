@@ -205,10 +205,7 @@ body h4 {
 img {
   width: 100%;
   height: auto;
-}
-
-.portfolio-images {
-  margin-top: 30px;
+  border-radius: 15px;
 }
 
 #page1 section ul {
@@ -234,7 +231,6 @@ img {
 
 #portfolio {
   margin-bottom: 100vh;
-  position: relative;
   display: flex;
 }
 #portfolio #timeline-vertical {
@@ -272,6 +268,40 @@ img {
 }
 #portfolio .timeline-item .timeline-activity {
   max-width: 40vw;
+}
+#portfolio .timeline-item .timeline-activity .used-technologies p {
+  margin-right: 20px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+#portfolio .timeline-item .modal .modal-dialog {
+  display: flex;
+  top: 10vh;
+  height: 70vh;
+  width: 70vw;
+  max-width: none;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content {
+  background-color: #064460;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 10%;
+  font-size: 18px;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info ul span:first-child {
+  font-weight: bold;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info ul span:first-child > a {
+  color: #fff;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info ul span:first-child > a:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
