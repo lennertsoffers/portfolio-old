@@ -346,14 +346,23 @@ img {
                     box-shadow: 5px 5px 5px rgba($color: #000, $alpha: 0.1);
                     border-radius: 15px;
                     padding: 20px;
+                    position: relative;
 
                     .modal-contents {
+                        max-height: 55vh;
+
                         .modal-info {
                             ul {
-                                padding: 0;
                                 list-style: none;
-                                margin-top: 10%;
-                                font-size: 18px;
+                                padding: 20px;
+                                font-size: 22px;
+                                height: 100%;
+                                border-radius: 15px;
+
+                                background-color: rgba(
+                                    $color: #fff,
+                                    $alpha: 0.25
+                                );
 
                                 span:first-child {
                                     font-weight: bold;
@@ -366,6 +375,22 @@ img {
                                         color: black;
                                     }
                                 }
+                            }
+
+                            .modal-under-photo {
+                                margin-top: 10px;
+                            }
+                        }
+
+                        .modal-photos {
+                            img {
+                                height: 55vh;
+                                width: auto;
+                            }
+
+                            #plennert-photos {
+                                display: flex;
+                                justify-content: space-around;
                             }
                         }
                     }

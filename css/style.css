@@ -287,12 +287,18 @@ img {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 20px;
+  position: relative;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents {
+  max-height: 55vh;
 }
 #portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info ul {
-  padding: 0;
   list-style: none;
-  margin-top: 10%;
-  font-size: 18px;
+  padding: 20px;
+  font-size: 22px;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 #portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info ul span:first-child {
   font-weight: bold;
@@ -302,6 +308,17 @@ img {
 }
 #portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info ul span:first-child > a:hover {
   color: black;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-info .modal-under-photo {
+  margin-top: 10px;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-photos img {
+  height: 55vh;
+  width: auto;
+}
+#portfolio .timeline-item .modal .modal-dialog .modal-content .modal-contents .modal-photos #plennert-photos {
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */
