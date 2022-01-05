@@ -36,7 +36,14 @@ const ViewContents = (function () {
                     content.style.animation = "showPageContent 0.5s ease-out";
 
                     document.body.style.overflowY = "scroll";
-                    document.querySelector("nav").style.paddingRight = "15px";
+                    if (
+                        !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                            navigator.userAgent
+                        )
+                    ) {
+                        document.querySelector("nav").style.paddingRight =
+                            "15px";
+                    }
                 }, 700);
             });
         });
