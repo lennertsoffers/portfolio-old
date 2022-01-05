@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>Lennert Soffers</title>
 </head>
 
 <body>
@@ -16,17 +16,14 @@
         <div id="navBg">
             <div></div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" id="nav-brand" href="#">Lennert Soffers</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav" id="nav-items">
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" id="nav-brand" href="#">Lennert Soffers</a>
+            <button id="navbar-button" data-active="false" class="nav-switch">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" id="nav-items">
+                </ul>
             </div>
         </nav>
     </header>
@@ -50,8 +47,8 @@
                 <div class=" d-flex flex-column justify-content-between">
                     <article>
                         <h1 class="mb-5">About me</h1>
-                        <div class="row justify-content-between">
-                            <section class="col-7">
+                        <section class="row justify-content-between">
+                            <div class="col-7">
                                 <p>
                                     I am a motivated student of applied information science at Thomas More. In my free
                                     time,
@@ -70,27 +67,19 @@
                                     concepts and gain work
                                     experience.
                                 </p>
-                                <!-- <p>
-                                    I am also someone who has quite a lot of experience working in a team. During
-                                    project
-                                    weeks at school we worked in
-                                    groups, but also during the hackathons I participated in, it was also as a group. In
-                                    this teamwork, I always take on one of two roles: I can
-                                    find myself in the role of a
-                                    puller, but usually I take on the executing role.
-                                </p> -->
-                            </section>
-                            <section class="col-4">
+                            </div>
+                            <div class="col-4">
                                 <img id="photo" src="assets/profilePic.jpg" alt="picture of Lennert Soffers">
-                            </section>
-                        </div>
+                            </div>
+                        </section>
                         <section id="soft-skills" class="mt-5">
                             <ul class="row list-unstyled mt-3">
                                 <li class="col-4">
                                     <div>
                                         <h3>Thorough</h3>
                                         <p>
-                                            I use my knowledge to work as thoroughly as possible. I don't like to do
+                                            I use my knowledge to work as thoroughly as possible. I don't like
+                                            to do
                                             things
                                             half-heartedly.
                                     </div>
@@ -117,6 +106,17 @@
                                     <div>3</div>
                                 </li>
                             </ul>
+                        </section>
+                        <section>
+                            <p>
+                                I am also someone who has quite a lot of experience working in a team. During
+                                project
+                                weeks at school we worked in
+                                groups, but also during the hackathons I participated in, it was also as a group. In
+                                this teamwork, I always take on one of two roles: I can
+                                find myself in the role of a
+                                puller, but usually I take on the executing role.
+                            </p>
                         </section>
                     </article>
                     <footer class="d-flex flex-column align-items-center pt-3">
@@ -1114,6 +1114,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/js/scroller.js"></script>
     <script src="/js/createNav.js"></script>
     <script src="/js/viewContents.js"></script>

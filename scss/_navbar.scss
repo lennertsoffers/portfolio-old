@@ -1,0 +1,65 @@
+#navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    border-bottom: 1px solid grey;
+    height: 50px;
+
+    // Background
+    #navBg {
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        justify-content: end;
+
+        > div {
+            background-color: #04283a;
+            width: 100vw;
+            height: 0vh;
+        }
+    }
+
+    // Navbar
+    nav {
+        > a {
+            padding-left: 10px;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        > button {
+            margin-right: 10px;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+        }
+
+        > #navbarNav {
+            margin: 0;
+
+            > ul {
+                margin: 20px 10px;
+
+                > li {
+                    background-color: rgba($color: #fff, $alpha: 0.25);
+                    margin: 0 0 5px 0;
+                    border-radius: 7px;
+                    text-align: center;
+                }
+
+                > li:hover {
+                    transition: background-color 0.15s ease-in;
+                    background-color: rgba($color: #fff, $alpha: 0.1);
+                }
+            }
+        }
+
+        li {
+            margin-left: 40px;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

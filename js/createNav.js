@@ -1,5 +1,6 @@
 const CreateNav = (function () {
     function init() {
+        const navbarNav = document.getElementById("navbarNav");
         const navUl = document.getElementById("nav-items");
 
         let pageNum = 0;
@@ -24,8 +25,13 @@ const CreateNav = (function () {
                     element.target.setAttribute("disabled", "true");
 
                     if (ViewContents.isViewingContent()) {
-                        document.querySelector("#navBg div").style.animation =
-                            "animateNavBgUp 1s ease-out";
+                        setTimeout(() => {
+                            document.querySelector(
+                                "#navBg div"
+                            ).style.animation = "animateNavBgUp 0.2s ease-out";
+                            navbarNav.style.backgroundColor = "transparent";
+                        }, 350);
+                        $(navbarNav).slideUp();
                         ViewContents.stopViewingContent();
                     }
                 }
@@ -35,9 +41,34 @@ const CreateNav = (function () {
         document
             .getElementById("nav-brand")
             .addEventListener("click", () => Scroller.scrollTo(0));
+
+        const navbarButton = document.getElementById("navbar-button");
+        navbarButton.addEventListener("click", () => {
+            if (navbarButton.getAttribute("data-active") === "false") {
+                showSmallNav();
+            } else {
+                hideSmallNav();
+            }
+        });
+    }
+
+    function showSmallNav() {
+        const navbarButton = document.getElementById("navbar-button");
+        const navbarNav = document.getElementById("navbarNav");
+        $(navbarNav).slideDown();
+        navbarButton.setAttribute("data-active", "true");
+    }
+
+    function hideSmallNav() {
+        const navbarButton = document.getElementById("navbar-button");
+        const navbarNav = document.getElementById("navbarNav");
+        $(navbarNav).slideUp();
+        navbarButton.setAttribute("data-active", "false");
     }
 
     return {
         init: init,
+        hideSmallNav: hideSmallNav,
+        showSmallNav: showSmallNav,
     };
 })();

@@ -13,6 +13,8 @@ const ViewContents = (function () {
                 page.querySelector(".page-scroll>div").style.animation =
                     "hideTitle 0.5s ease-in-out forwards";
 
+                CreateNav.hideSmallNav();
+
                 setTimeout(() => {
                     page.querySelector(".page-scroll>div").style.display =
                         "none";
@@ -29,10 +31,12 @@ const ViewContents = (function () {
 
                     document.querySelector("#navBg div").style.animation =
                         "animateNavBgDown 0.5s ease-out forwards";
-
+                    document.getElementById("navbarNav").style.backgroundColor =
+                        "#04283a";
                     content.style.animation = "showPageContent 0.5s ease-out";
 
                     document.body.style.overflowY = "scroll";
+                    document.querySelector("nav").style.paddingRight = "15px";
                 }, 700);
             });
         });

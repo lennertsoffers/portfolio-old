@@ -1,0 +1,10 @@
+.page-scroll {
+    > div {
+        overflow: hidden;
+        max-width: 40vw;
+
+        > h1 {
+            font-size: 75px;
+        }
+    }
+}

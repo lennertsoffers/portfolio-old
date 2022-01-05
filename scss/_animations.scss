@@ -1,0 +1,54 @@
+@keyframes horizontalScroll {
+    from {
+        left: var(--from);
+    }
+    to {
+        left: var(--to);
+    }
+}
+
+@keyframes hideTitle {
+    from {
+        height: 250px;
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+@keyframes showPageContent {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animateNavBgDown {
+    from {
+        opacity: 0;
+        height: 0vh;
+    }
+
+    to {
+        opacity: 1;
+        height: 50px;
+    }
+}
+
+@keyframes animateNavBgUp {
+    from {
+        opacity: 1;
+        height: 50px;
+    }
+
+    to {
+        opacity: 0;
+        height: 0vh;
+    }
+}

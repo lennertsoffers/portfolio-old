@@ -31,7 +31,6 @@ const Scroller = (function () {
     };
 
     function scrollTo(p) {
-        console.log("scrollTo page: " + p);
         if (!scrolling) {
             if (p != page) {
                 root.style.setProperty("--from", `${to}vw`);
@@ -47,6 +46,10 @@ const Scroller = (function () {
                     "horizontalScroll 1.5s ease-in-out forwards";
 
                 scrolling = true;
+
+                CreateNav.hideSmallNav();
+
+                document.querySelector("nav").style.paddingRight = "0px";
 
                 setTimeout(() => {
                     document.getElementById("pages").style.left = `${to}vw`;
