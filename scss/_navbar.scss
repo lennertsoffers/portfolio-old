@@ -43,6 +43,10 @@
                     margin: 0 0 5px 0;
                     border-radius: 7px;
                     text-align: center;
+
+                    > a {
+                        color: #fff;
+                    }
                 }
 
                 > li:hover {
@@ -51,12 +55,38 @@
                 }
             }
         }
+    }
 
-        li {
-            margin-left: 40px;
+    @media screen and (min-width: 576px) {
+        nav {
+            padding: 0;
 
-            a {
-                color: #fff;
+            > a {
+                margin-left: 20px;
+                font-size: 1.3rem;
+            }
+
+            > button {
+                display: none;
+            }
+
+            #navbarNav > ul {
+                margin: 0;
+                margin-right: 20px;
+
+                li {
+                    margin-top: 4px;
+                    background-color: transparent;
+                }
+
+                li:hover {
+                    background-color: transparent;
+
+                    > a {
+                        color: yellow;
+                        transition: color 0.15s ease-in;
+                    }
+                }
             }
         }
     }

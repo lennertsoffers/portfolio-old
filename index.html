@@ -16,12 +16,12 @@
         <div id="navBg">
             <div></div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-sm navbar-light  d-flex align-items-center">
             <a class="navbar-brand" id="nav-brand" href="#">Lennert Soffers</a>
-            <button id="navbar-button" data-active="false" class="nav-switch">
+            <button id="navbar-button" class="nav-switch" data-active="false">
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav" id="nav-items">
                 </ul>
             </div>
@@ -47,8 +47,8 @@
                 <div class=" d-flex flex-column justify-content-between">
                     <article>
                         <h1 class="">About me</h1>
-                        <section class="row justify-content-between">
-                            <div class="col-lg-7">
+                        <section class="justify-content-between d-flex">
+                            <div>
                                 <p>
                                     I am a motivated student of applied information science at Thomas More. In my free
                                     time,
@@ -58,8 +58,8 @@
                                     In addition, I am a leader at the Scouts on Sundays.
 
                                 </p>
-                                <div class="d-sm-none">
-                                    <img id="photo" src="assets/profilePic.jpg" alt="picture of Lennert Soffers">
+                                <div class="d-sm-none" id="about-photo-small">
+                                    <img src="assets/profilePic.jpg" alt="picture of Lennert Soffers">
                                 </div>
                                 <p>
                                     I regularly take part in
@@ -71,42 +71,50 @@
                                     experience.
                                 </p>
                             </div>
-                            <div class="col-lg-4">
-                                <img id="photo" src="assets/profilePic.jpg" alt="picture of Lennert Soffers">
+                            <div class="d-none d-sm-block">
+                                <img src="assets/profilePic.jpg" alt="picture of Lennert Soffers">
                             </div>
                         </section>
-                        <section id="soft-skills" class="mt-5">
-                            <ul class="row list-unstyled mt-3">
-                                <li class="col-4">
+                        <section class="mt-5">
+                            <ul class="row list-unstyled w-100">
+                                <li class="col-12 d-flex justify-content-start">
                                     <div>
-                                        <h3>Thorough</h3>
-                                        <p>
-                                            I use my knowledge to work as thoroughly as possible. I don't like
-                                            to do
-                                            things
-                                            half-heartedly.
-                                    </div>
-                                    <div>
-                                        1
+                                        <div>
+                                            <h3>Thorough</h3>
+                                            <p>
+                                                I use my knowledge to work as thoroughly as possible. I don't like
+                                                to do
+                                                things
+                                                half-heartedly.
+                                        </div>
+                                        <div>
+                                            1
+                                        </div>
                                     </div>
                                 </li>
-                                <li class="col-4">
+                                <li class="col-12 d-flex justify-content-center">
                                     <div>
-                                        <h3>Punctual</h3>
-                                        <p>
-                                            Being late is not my thing, I am hardly ever late.
-                                        </p>
+                                        <div>
+                                            <h3>Punctual</h3>
+                                            <p>
+                                                Being late is not my thing, I am hardly ever late. Rather an hour early
+                                                than
+                                                5 minutes late.
+                                            </p>
+                                        </div>
+                                        <div>2</div>
                                     </div>
-                                    <div>2</div>
                                 </li>
-                                <li class="col-4">
+                                <li class="col-12 d-flex justify-content-end">
                                     <div>
-                                        <h3>Enthusiastic</h3>
-                                        <p>
-                                            When I go to school or to work, I do so with full enthusiasm.
-                                        </p>
+                                        <div>
+                                            <h3>Enthusiastic</h3>
+                                            <p>
+                                                When I go to school or to work, I do so with full enthusiasm.
+                                            </p>
+                                        </div>
+                                        <div>3</div>
                                     </div>
-                                    <div>3</div>
                                 </li>
                             </ul>
                         </section>

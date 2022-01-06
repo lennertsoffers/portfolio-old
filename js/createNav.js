@@ -25,13 +25,22 @@ const CreateNav = (function () {
                     element.target.setAttribute("disabled", "true");
 
                     if (ViewContents.isViewingContent()) {
+                        if (
+                            !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                                navigator.userAgent
+                            )
+                        ) {
+                            document.querySelector("nav").style.paddingRight =
+                                "0px";
+                        }
+
                         setTimeout(() => {
                             document.querySelector(
                                 "#navBg div"
                             ).style.animation = "animateNavBgUp 0.2s ease-out";
                             navbarNav.style.backgroundColor = "transparent";
                         }, 350);
-                        $(navbarNav).slideUp();
+                        hideSmallNav();
                         ViewContents.stopViewingContent();
                     }
                 }
@@ -53,22 +62,36 @@ const CreateNav = (function () {
     }
 
     function showSmallNav() {
-        const navbarButton = document.getElementById("navbar-button");
-        const navbarNav = document.getElementById("navbarNav");
-        $(navbarNav).slideDown();
-        navbarButton.setAttribute("data-active", "true");
+        if (window.innerWidth < 576) {
+            const navbarButton = document.getElementById("navbar-button");
+            const navbarNav = document.getElementById("navbarNav");
+            $(navbarNav).slideDown();
+            navbarButton.setAttribute("data-active", "true");
+        }
+    }
+
+    function hideSmallNavInstant() {
+        if (window.innerWidth < 576) {
+            const navbarButton = document.getElementById("navbar-button");
+            const navbarNav = document.getElementById("navbarNav");
+            $(navbarNav).hide();
+            navbarButton.setAttribute("data-active", "false");
+        }
     }
 
     function hideSmallNav() {
-        const navbarButton = document.getElementById("navbar-button");
-        const navbarNav = document.getElementById("navbarNav");
-        $(navbarNav).slideUp();
-        navbarButton.setAttribute("data-active", "false");
+        if (window.innerWidth < 576) {
+            const navbarButton = document.getElementById("navbar-button");
+            const navbarNav = document.getElementById("navbarNav");
+            $(navbarNav).slideUp();
+            navbarButton.setAttribute("data-active", "false");
+        }
     }
 
     return {
         init: init,
         hideSmallNav: hideSmallNav,
         showSmallNav: showSmallNav,
+        hideSmallNavInstant: hideSmallNavInstant,
     };
 })();

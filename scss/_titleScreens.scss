@@ -7,18 +7,55 @@
         height: 100vh;
         width: 100vw;
         flex: 0 0 100vw;
-        padding: 0 30px;
+        padding: 0 5vw;
 
         > div {
             overflow: hidden;
 
             > h1 {
                 font-size: 1.8rem;
+                margin-top: 20px;
             }
 
             > p:last-child {
                 font-size: 0.8rem;
             }
+        }
+
+        @media screen and (min-width: 576px) {
+            padding: 0 15vw;
+
+            > div {
+                > h1 {
+                    font-size: 3rem;
+                }
+
+                > p:last-child {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 0 20vw;
+        }
+
+        @media screen and (min-width: 992px) {
+            padding: 0 24vw;
+
+            > div {
+                > h1 {
+                    font-size: 4rem;
+                }
+
+                > p:last-child {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 0 30vw;
         }
     }
 }

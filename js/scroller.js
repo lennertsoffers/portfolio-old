@@ -49,16 +49,6 @@ const Scroller = (function () {
 
                 CreateNav.hideSmallNav();
 
-                if (
-                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-                        navigator.userAgent
-                    )
-                ) {
-                    document.querySelector("nav").style.paddingRight = "8px";
-                } else {
-                    document.querySelector("nav").style.paddingRight = "0px";
-                }
-
                 setTimeout(() => {
                     document.getElementById("pages").style.left = `${to}vw`;
                     document.getElementById("pages").style.animation = "";
