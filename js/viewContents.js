@@ -13,7 +13,7 @@ const ViewContents = (function () {
                 page.querySelector(".page-scroll>div").style.animation =
                     "hideTitle 0.5s ease-in-out forwards";
 
-                if (window.innerWidth < 576) {
+                if ($(window).innerWidth() < 576) {
                     CreateNav.hideSmallNav();
                     setTimeout(() => {
                         page.querySelector(".page-scroll>div").style.display =

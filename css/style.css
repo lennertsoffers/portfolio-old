@@ -104,7 +104,7 @@
     padding: 0;
   }
   #navbar nav > a {
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 1.3rem;
   }
   #navbar nav > button {
@@ -112,7 +112,7 @@
   }
   #navbar nav #navbarNav > ul {
     margin: 0;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   #navbar nav #navbarNav > ul li {
     margin-top: 4px;
@@ -124,6 +124,49 @@
   #navbar nav #navbarNav > ul li:hover > a {
     color: yellow;
     transition: color 0.15s ease-in;
+  }
+}
+@media screen and (min-width: 668px) {
+  #navbar nav > a {
+    margin-left: 20px;
+  }
+  #navbar #navbarNav > ul {
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #navbar nav > a {
+    margin-left: 30px;
+    font-size: 1.5rem;
+  }
+  #navbar #navbarNav > ul {
+    padding-right: 30px;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 868px) {
+  #navbar nav > a {
+    margin-left: 40px;
+  }
+  #navbar #navbarNav > ul {
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #navbar nav > a {
+    font-size: 1.7rem;
+    padding-top: 0;
+  }
+  #navbar #navbarNav > ul {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar nav > a {
+    margin-left: 90px;
+  }
+  #navbar #navbarNav > ul {
+    padding-right: 90px;
   }
 }
 
@@ -239,25 +282,32 @@ img {
   background-color: #05364c;
 }
 #page0 .page-content > div article section:nth-of-type(1) #about-photo-small {
+  width: 100%;
   margin-bottom: 20px;
+  text-align: center;
+}
+#page0 .page-content > div article section:nth-of-type(1) #about-photo-small > img {
   max-width: 350px;
-  margin: auto;
   margin-bottom: 20px;
 }
 #page0 .page-content > div article section:nth-of-type(2) {
-  margin-bottom: 20px;
+  margin: 30px;
 }
-#page0 .page-content > div article section:nth-of-type(2) ul {
+#page0 .page-content > div article section:nth-of-type(2) > ul {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-#page0 .page-content > div article section:nth-of-type(2) ul li {
+#page0 .page-content > div article section:nth-of-type(2) > ul > li {
   height: 150px;
+  width: 100%;
+  display: flex;
 }
-#page0 .page-content > div article section:nth-of-type(2) ul li div {
+#page0 .page-content > div article section:nth-of-type(2) > ul > li div {
   position: relative;
   width: 240px;
 }
-#page0 .page-content > div article section:nth-of-type(2) ul li div div:last-child {
+#page0 .page-content > div article section:nth-of-type(2) > ul > li div div:last-child {
   top: 10px;
   left: 5px;
   position: absolute;
@@ -267,6 +317,12 @@ img {
   margin-top: 0;
   line-height: 1.1;
   font-weight: bold;
+}
+#page0 .page-content > div article section:nth-of-type(2) > ul > li:nth-of-type(2) {
+  justify-content: center;
+}
+#page0 .page-content > div article section:nth-of-type(2) > ul > li:last-of-type {
+  justify-content: end;
 }
 #page0 .page-content > div footer {
   font-size: 0.8rem;
@@ -285,30 +341,6 @@ img {
     min-height: 300px;
     max-height: 300px;
     width: auto;
-  }
-  #page0 .page-content > div article section:nth-of-type(2) {
-    margin-bottom: 20px;
-  }
-  #page0 .page-content > div article section:nth-of-type(2) ul {
-    margin: 0;
-  }
-  #page0 .page-content > div article section:nth-of-type(2) ul li {
-    height: 150px;
-  }
-  #page0 .page-content > div article section:nth-of-type(2) ul li div {
-    position: relative;
-    width: 240px;
-  }
-  #page0 .page-content > div article section:nth-of-type(2) ul li div div:last-child {
-    top: 10px;
-    left: 5px;
-    position: absolute;
-    font-size: 8rem;
-    opacity: 0.25;
-    padding-top: 0;
-    margin-top: 0;
-    line-height: 1.1;
-    font-weight: bold;
   }
   #page0 .page-content > div footer {
     font-size: 0.8rem;
@@ -335,6 +367,26 @@ img {
     min-height: 330px;
     max-height: 330px;
   }
+  #page0 .page-content > div article section:nth-of-type(2) {
+    margin: 100px 0;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul {
+    width: calc(100vw - 20px);
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li {
+    height: 150px;
+    display: flex;
+    justify-content: center !important;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li div {
+    position: relative;
+    width: 200px;
+  }
+  #page0 .page-content > div article section:nth-of-type(3) p {
+    font-size: 1.1rem;
+  }
 }
 @media screen and (min-width: 768px) {
   #page0 .page-content > div article {
@@ -352,6 +404,9 @@ img {
     min-height: 360px;
     max-height: 360px;
   }
+  #page0 .page-content > div article section:nth-of-type(3) p {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 868px) {
   #page0 .page-content > div article {
@@ -368,6 +423,26 @@ img {
   #page0 .page-content > div article section:nth-of-type(1) > div:nth-of-type(2) > img {
     min-height: 440px;
     max-height: 440px;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) {
+    margin: 100px 0;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li div {
+    width: 250px;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li > div div:first-of-type > h3 {
+    font-size: 1rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li > div div:first-of-type > p {
+    font-size: 1.4rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li > div div:last-of-type {
+    top: 0;
+    font-size: 12rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(3) p {
+    padding-top: 100px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -391,31 +466,115 @@ img {
     width: 100%;
     max-width: 500px;
   }
+  #page0 .page-content > div article section:nth-of-type(3) p {
+    padding-top: 100px;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #page0 .page-content > div article {
+    margin-top: 110px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  #page0 .page-content > div article > h1 {
+    font-size: 5rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(1) > div:nth-of-type(1) {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  #page0 .page-content > div article section:nth-of-type(1) > div:nth-of-type(1) > p {
+    font-size: 2.9rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(1) > div:nth-of-type(1) > p:first-of-type {
+    min-width: 600px;
+    max-width: 600px;
+    margin-right: 20px;
+  }
+  #page0 .page-content > div article section:nth-of-type(1) > div:nth-of-type(1) > #about-photo-small {
+    min-width: calc(100% - 620px);
+    max-width: calc(100% - 620px);
+  }
+  #page0 .page-content > div article section:nth-of-type(1) > div:nth-of-type(1) > #about-photo-small img {
+    min-height: 560px;
+    max-height: 560px;
+    width: auto;
+    max-width: none;
+    min-width: none;
+    margin: auto;
+    margin-bottom: 0;
+  }
+  #page0 .page-content > div article section:nth-of-type(1) > div:nth-of-type(1) > p:last-of-type {
+    margin-top: 60px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) {
+    margin: 100px 0;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li div {
+    width: 400px;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li > div div:first-of-type > h3 {
+    font-size: 1.3rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li > div div:first-of-type > p {
+    font-size: 2rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(2) > ul > li > div div:last-of-type {
+    top: -10px;
+    font-size: 18rem;
+  }
+  #page0 .page-content > div article section:nth-of-type(3) p {
+    text-align: center;
+    margin: auto;
+    padding: 100px 0px;
+    max-width: 1150px;
+    font-size: 2.9rem;
+  }
 }
 
 #page1 {
   background-color: #064460;
 }
-
-#page1 section ul {
-  list-style: none;
-  padding: 0;
+#page1 article {
+  padding: 20px;
 }
-#page1 section > ul > li {
-  margin-bottom: 100px;
+#page1 article > h1 {
+  margin: 0 0 20px 0;
 }
-#page1 section li {
-  padding: 5px 0;
+#page1 article #portfolio #timeline-vertical {
+  display: none;
 }
-#page1 section li > span:first-child {
-  font-weight: bold;
-  text-decoration: underline;
+#page1 article #portfolio #timeline-content .timeline-item .timeline-horizontal {
+  display: none;
 }
-#page1 section li > span:first-child > a {
-  color: #fff;
+#page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div > h3 {
+  font-size: 1.1rem;
 }
-#page1 section li > span:first-child > a:hover {
-  color: black;
+#page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div > h3 .winner-wrapper {
+  position: relative;
+  display: inline-block;
+}
+#page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div > h3 .winner-wrapper > div:first-of-type {
+  position: absolute;
+}
+#page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div > h3 .winner-wrapper > div:last-of-type {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+#page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div .used-technologies > p {
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
+#page1 article #portfolio #timeline-content .timeline-item .timeline-activity > p {
+  font-size: 0.8rem;
 }
 
 #portfolio {
@@ -455,11 +614,7 @@ img {
 #portfolio .timeline-item #id3 {
   width: 20vw;
 }
-#portfolio .timeline-item .timeline-activity {
-  max-width: 40vw;
-}
 #portfolio .timeline-item .timeline-activity .used-technologies p {
-  margin-right: 20px;
   padding: 0 5px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.25);

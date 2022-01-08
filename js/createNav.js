@@ -53,6 +53,7 @@ const CreateNav = (function () {
 
         const navbarButton = document.getElementById("navbar-button");
         navbarButton.addEventListener("click", () => {
+            console.log("t");
             if (navbarButton.getAttribute("data-active") === "false") {
                 showSmallNav();
             } else {
@@ -62,7 +63,7 @@ const CreateNav = (function () {
     }
 
     function showSmallNav() {
-        if (window.innerWidth < 576) {
+        if ($(window).innerWidth() < 576) {
             const navbarButton = document.getElementById("navbar-button");
             const navbarNav = document.getElementById("navbarNav");
             $(navbarNav).slideDown();
@@ -71,7 +72,7 @@ const CreateNav = (function () {
     }
 
     function hideSmallNavInstant() {
-        if (window.innerWidth < 576) {
+        if ($(window).innerWidth() < 576) {
             const navbarButton = document.getElementById("navbar-button");
             const navbarNav = document.getElementById("navbarNav");
             $(navbarNav).hide();
@@ -80,7 +81,7 @@ const CreateNav = (function () {
     }
 
     function hideSmallNav() {
-        if (window.innerWidth < 576) {
+        if ($(window).innerWidth() < 576) {
             const navbarButton = document.getElementById("navbar-button");
             const navbarNav = document.getElementById("navbarNav");
             $(navbarNav).slideUp();

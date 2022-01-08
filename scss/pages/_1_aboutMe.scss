@@ -6,21 +6,30 @@
             article {
                 section:nth-of-type(1) {
                     #about-photo-small {
+                        width: 100%;
                         margin-bottom: 20px;
-                        max-width: 350px;
-                        margin: auto;
-                        margin-bottom: 20px;
+                        text-align: center;
+
+                        > img {
+                            max-width: 350px;
+                            margin-bottom: 20px;
+                        }
                     }
                 }
 
                 section:nth-of-type(2) {
-                    margin-bottom: 20px;
+                    margin: 30px;
 
-                    ul {
+                    > ul {
                         margin: 0;
+                        display: flex;
+                        flex-wrap: wrap;
 
-                        li {
+                        > li {
                             height: 150px;
+                            width: 100%;
+                            display: flex;
+
                             div {
                                 position: relative;
                                 width: 240px;
@@ -37,6 +46,14 @@
                                     font-weight: bold;
                                 }
                             }
+                        }
+
+                        > li:nth-of-type(2) {
+                            justify-content: center;
+                        }
+
+                        > li:last-of-type {
+                            justify-content: end;
                         }
                     }
                 }
@@ -63,34 +80,6 @@
                                 min-height: 300px;
                                 max-height: 300px;
                                 width: auto;
-                            }
-                        }
-                    }
-
-                    section:nth-of-type(2) {
-                        margin-bottom: 20px;
-
-                        ul {
-                            margin: 0;
-
-                            li {
-                                height: 150px;
-                                div {
-                                    position: relative;
-                                    width: 240px;
-
-                                    div:last-child {
-                                        top: 10px;
-                                        left: 5px;
-                                        position: absolute;
-                                        font-size: 8rem;
-                                        opacity: 0.25;
-                                        padding-top: 0;
-                                        margin-top: 0;
-                                        line-height: 1.1;
-                                        font-weight: bold;
-                                    }
-                                }
                             }
                         }
                     }
@@ -129,6 +118,33 @@
                             }
                         }
                     }
+
+                    section:nth-of-type(2) {
+                        margin: 100px 0;
+
+                        > ul {
+                            width: calc(100vw - 20px);
+                            display: flex;
+                            flex-wrap: nowrap;
+
+                            > li {
+                                height: 150px;
+                                display: flex;
+                                justify-content: center !important;
+
+                                div {
+                                    position: relative;
+                                    width: 200px;
+                                }
+                            }
+                        }
+                    }
+
+                    section:nth-of-type(3) {
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    }
                 }
             }
 
@@ -154,6 +170,12 @@
                             }
                         }
                     }
+
+                    section:nth-of-type(3) {
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
                 }
             }
 
@@ -177,6 +199,40 @@
                                 min-height: 440px;
                                 max-height: 440px;
                             }
+                        }
+                    }
+
+                    section:nth-of-type(2) {
+                        margin: 100px 0;
+                        > ul {
+                            > li {
+                                div {
+                                    width: 250px;
+                                }
+                                > div {
+                                    div:first-of-type {
+                                        > h3 {
+                                            font-size: 1rem;
+                                        }
+
+                                        > p {
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+
+                                    div:last-of-type {
+                                        top: 0;
+                                        font-size: 12rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    section:nth-of-type(3) {
+                        p {
+                            padding-top: 100px;
+                            font-size: 1.5rem;
                         }
                     }
                 }
@@ -208,6 +264,104 @@
                                 width: 100%;
                                 max-width: 500px;
                             }
+                        }
+                    }
+
+                    section:nth-of-type(3) {
+                        p {
+                            padding-top: 100px;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                article {
+                    margin-top: 110px;
+                    padding-left: 80px;
+                    padding-right: 80px;
+
+                    > h1 {
+                        font-size: 5rem;
+                    }
+
+                    section:nth-of-type(1) {
+                        > div:nth-of-type(1) {
+                            min-width: 100%;
+                            max-width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            position: relative;
+
+                            > p {
+                                font-size: 2.9rem;
+                            }
+
+                            > p:first-of-type {
+                                min-width: 600px;
+                                max-width: 600px;
+                                margin-right: 20px;
+                            }
+
+                            > #about-photo-small {
+                                min-width: calc(100% - 620px);
+                                max-width: calc(100% - 620px);
+
+                                img {
+                                    min-height: 560px;
+                                    max-height: 560px;
+                                    width: auto;
+                                    max-width: none;
+                                    min-width: none;
+                                    margin: auto;
+
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            > p:last-of-type {
+                                margin-top: 60px;
+                                min-width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+
+                    section:nth-of-type(2) {
+                        margin: 100px 0;
+                        > ul {
+                            > li {
+                                div {
+                                    width: 400px;
+                                }
+                                > div {
+                                    div:first-of-type {
+                                        > h3 {
+                                            font-size: 1.3rem;
+                                        }
+
+                                        > p {
+                                            font-size: 2rem;
+                                        }
+                                    }
+
+                                    div:last-of-type {
+                                        top: -10px;
+                                        font-size: 18rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    section:nth-of-type(3) {
+                        p {
+                            text-align: center;
+                            margin: auto;
+                            padding: 100px 0px;
+                            max-width: 1150px;
+                            font-size: 2.9rem;
                         }
                     }
                 }

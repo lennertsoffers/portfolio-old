@@ -1,30 +1,57 @@
 #page1 {
     background-color: #064460;
-}
+    article {
+        padding: 20px;
 
-#page1 {
-    section {
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        > ul > li {
-            margin-bottom: 100px;
+        > h1 {
+            margin: 0 0 20px 0;
         }
 
-        li {
-            padding: 5px 0;
+        #portfolio {
+            #timeline-vertical {
+                display: none;
+            }
 
-            > span:first-child {
-                font-weight: bold;
-                text-decoration: underline;
+            #timeline-content {
+                .timeline-item {
+                    .timeline-horizontal {
+                        display: none;
+                    }
 
-                > a {
-                    color: #fff;
-                }
+                    .timeline-activity {
+                        > div {
+                            > h3 {
+                                font-size: 1.1rem;
 
-                > a:hover {
-                    color: black;
+                                .winner-wrapper {
+                                    position: relative;
+                                    display: inline-block;
+
+                                    > div:first-of-type {
+                                        position: absolute;
+                                    }
+
+                                    > div:last-of-type {
+                                        position: absolute;
+                                        text-align: center;
+                                        width: 100%;
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+
+                            .used-technologies {
+                                > p {
+                                    margin-right: 5px;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+
+                        > p {
+                            font-size: 0.8rem;
+                        }
+                    }
                 }
             }
         }
@@ -76,11 +103,10 @@
         }
 
         .timeline-activity {
-            max-width: 40vw;
+            // max-width: 40vw;
 
             .used-technologies {
                 p {
-                    margin-right: 20px;
                     padding: 0 5px;
                     border-radius: 5px;
                     background-color: rgba($color: #fff, $alpha: 0.25);
