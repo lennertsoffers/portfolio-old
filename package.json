@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "sass:watch": "sass ./scss/app.scss:./css/style.css --watch",
+        "dev:watch": "concurrently \"npm run sass:watch \" \"live-server\""
+    },
+    "devDependencies": {
+        "concurrently": "^7.0.0"
+    }
+}
