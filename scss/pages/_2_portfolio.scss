@@ -14,12 +14,14 @@
 
             #timeline-content {
                 .timeline-item {
+                    margin: 0;
+
                     .timeline-horizontal {
                         display: none;
                     }
 
                     .timeline-activity {
-                        > div {
+                        > div:first-of-type {
                             > h3 {
                                 font-size: 1.1rem;
 
@@ -51,15 +53,62 @@
                         > p {
                             font-size: 0.8rem;
                         }
+
+                        > div.timeline-info-small {
+                            > ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0 15vw;
+
+                                > li {
+                                    > span {
+                                        color: #fff;
+                                        font-size: 0.8rem;
+                                    }
+
+                                    > span:first-of-type {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+
+                            > div:first-of-type {
+                                padding: 20px 15vw;
+                            }
+
+                            > div:nth-of-type(2) {
+                                padding: 0 15vw 20px 15vw;
+                            }
+
+                            > div:nth-of-type(3) {
+                                padding: 0 15vw 20px 15vw;
+                            }
+                        }
                     }
+                }
+
+                .hr {
+                    height: 1px;
+                    background-color: #fff;
+                    width: 100vw;
+                    margin: 20px -20px 30px -20px;
                 }
             }
         }
     }
+
+    footer {
+        margin-top: 100px;
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media screen and (min-width: 576px) {
+    }
 }
 
 #portfolio {
-    margin-bottom: 100vh;
     display: flex;
 
     #timeline-vertical {
@@ -71,7 +120,6 @@
     .timeline-item {
         display: flex;
         justify-content: start;
-        margin-bottom: 100px;
 
         .timeline-horizontal {
             display: flex;
@@ -114,70 +162,70 @@
             }
         }
 
-        .modal {
-            .modal-dialog {
-                display: flex;
-                top: 10vh;
-                height: 70vh;
+        // .modal {
+        //     .modal-dialog {
+        //         display: flex;
+        //         top: 10vh;
+        //         height: 70vh;
 
-                width: 70vw;
-                max-width: none;
+        //         width: 70vw;
+        //         max-width: none;
 
-                .modal-content {
-                    background-color: #064460;
-                    box-shadow: 5px 5px 5px rgba($color: #000, $alpha: 0.1);
-                    border-radius: 15px;
-                    padding: 20px;
-                    position: relative;
+        //         .modal-content {
+        //             background-color: #064460;
+        //             box-shadow: 5px 5px 5px rgba($color: #000, $alpha: 0.1);
+        //             border-radius: 15px;
+        //             padding: 20px;
+        //             position: relative;
 
-                    .modal-contents {
-                        max-height: 55vh;
+        //             .modal-contents {
+        //                 max-height: 55vh;
 
-                        .modal-info {
-                            ul {
-                                list-style: none;
-                                padding: 20px;
-                                font-size: 22px;
-                                height: 100%;
-                                border-radius: 15px;
+        //                 .modal-info {
+        //                     ul {
+        //                         list-style: none;
+        //                         padding: 20px;
+        //                         font-size: 22px;
+        //                         height: 100%;
+        //                         border-radius: 15px;
 
-                                background-color: rgba(
-                                    $color: #fff,
-                                    $alpha: 0.25
-                                );
+        //                         background-color: rgba(
+        //                             $color: #fff,
+        //                             $alpha: 0.25
+        //                         );
 
-                                span:first-child {
-                                    font-weight: bold;
+        //                         span:first-child {
+        //                             font-weight: bold;
 
-                                    > a {
-                                        color: #fff;
-                                    }
+        //                             > a {
+        //                                 color: #fff;
+        //                             }
 
-                                    > a:hover {
-                                        color: black;
-                                    }
-                                }
-                            }
+        //                             > a:hover {
+        //                                 color: black;
+        //                             }
+        //                         }
+        //                     }
 
-                            .modal-under-photo {
-                                margin-top: 10px;
-                            }
-                        }
+        //                     .modal-under-photo {
+        //                         margin-top: 10px;
+        //                     }
+        //                 }
 
-                        .modal-photos {
-                            img {
-                                height: 55vh;
-                                width: auto;
-                            }
+        //                 .modal-photos {
+        //                     img {
+        //                         height: 55vh;
+        //                         width: auto;
+        //                     }
 
-                            #plennert-photos {
-                                display: flex;
-                                justify-content: space-around;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        //                     #plennert-photos {
+        //                         display: flex;
+        //                         justify-content: space-around;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
