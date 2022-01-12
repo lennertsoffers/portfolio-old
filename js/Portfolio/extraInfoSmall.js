@@ -1,4 +1,6 @@
 const ExtraInfoSmall = (function () {
+    let modal;
+
     function init() {
         $(".timeline-info-small").hide();
 
@@ -17,7 +19,7 @@ const ExtraInfoSmall = (function () {
                         .slideDown();
                 }
             } else {
-                const modal = new bootstrap.Modal(
+                modal = new bootstrap.Modal(
                     $(e.target).parents("div.timeline-activity").find(".modal")
                 );
                 modal.show();
@@ -25,7 +27,12 @@ const ExtraInfoSmall = (function () {
         });
     }
 
+    function getModal() {
+        return modal;
+    }
+
     return {
         init: init,
+        getModal: getModal,
     };
 })();

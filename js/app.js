@@ -10,6 +10,10 @@ $(window).resize(() => {
     if ($(window).innerWidth() >= 576) {
         $(".timeline-info-small").slideUp();
         $(".more-info-button a").removeClass("openInfoSmall");
+    } else {
+        if (ExtraInfoSmall.getModal() !== undefined) {
+            ExtraInfoSmall.getModal().hide();
+        }
     }
 });
 

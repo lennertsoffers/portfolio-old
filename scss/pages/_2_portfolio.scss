@@ -46,6 +46,12 @@
                                 > p {
                                     margin-right: 5px;
                                     font-size: 0.8rem;
+                                    padding: 0 5px;
+                                    border-radius: 5px;
+                                    background-color: rgba(
+                                        $color: #fff,
+                                        $alpha: 0.25
+                                    );
                                 }
                             }
                         }
@@ -95,6 +101,16 @@
                 }
             }
         }
+        #timeline-arrow {
+            position: relative;
+
+            i {
+                position: absolute;
+                top: -7px;
+                left: 3px;
+                font-size: 1.5rem;
+            }
+        }
     }
 
     footer {
@@ -105,127 +121,332 @@
     }
 
     @media screen and (min-width: 576px) {
-    }
-}
-
-#portfolio {
-    display: flex;
-
-    #timeline-vertical {
-        background-color: #fff;
-        width: 1px;
-        height: 100%;
-    }
-
-    .timeline-item {
-        display: flex;
-        justify-content: start;
-
-        .timeline-horizontal {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-right: 30px;
-
-            .timeline-horizontal-text {
-                margin-bottom: 5px;
-                text-align: center;
+        article {
+            #timeline-content {
+                margin-bottom: 70px;
             }
 
-            .timeline-horizontal-bar {
-                background-color: #fff;
-                height: 1px;
+            .modal {
+                .modal-dialog {
+                    .modal-content {
+                        background-color: #064460;
+                        box-shadow: 5px 5px 5px rgba($color: #000, $alpha: 0.1);
+                        border-radius: 15px;
+                        padding: 20px;
+
+                        .modal-body {
+                            padding-top: 0;
+                            padding-bottom: 0;
+
+                            .modal-contents {
+                                ul {
+                                    list-style: none;
+                                    padding: 0;
+
+                                    li {
+                                        color: #fff;
+                                        font-size: 0.8rem;
+
+                                        span {
+                                            color: #fff;
+                                            font-size: 0.8rem;
+
+                                            a {
+                                                color: #fff;
+                                            }
+                                        }
+
+                                        span:first-of-type {
+                                            font-weight: bold;
+                                        }
+
+                                        ul {
+                                            list-style-type: disc;
+                                            padding-left: 20px;
+                                        }
+                                    }
+                                }
+
+                                > div:first-of-type {
+                                    background-color: rgba(
+                                        $color: #fff,
+                                        $alpha: 0.25
+                                    );
+                                    border-radius: 15px;
+                                    padding: 0 20px;
+
+                                    > ul {
+                                        > li {
+                                            margin-bottom: 7px;
+                                        }
+                                    }
+                                }
+
+                                > div:last-of-type {
+                                    margin: 0;
+                                    padding: 0;
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-        }
 
-        #id1 {
-            width: 10vw;
-        }
+            #timeline-item-treasure_hunt {
+                .modal {
+                    .modal-contents {
+                        .carousel-item > img {
+                            min-height: 373px;
+                        }
+                    }
+                }
+            }
 
-        #id2 {
-            width: 30vw;
-        }
+            #timeline-item-ypto_hackathon {
+                .modal {
+                    .modal-contents {
+                        div:last-of-type {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
 
-        #id3 {
-            width: 20vw;
-        }
-
-        .timeline-activity {
-            // max-width: 40vw;
-
-            .used-technologies {
-                p {
-                    padding: 0 5px;
-                    border-radius: 5px;
-                    background-color: rgba($color: #fff, $alpha: 0.25);
+            #timeline-item-plennert {
+                .modal {
+                    img {
+                        min-height: 402px;
+                    }
                 }
             }
         }
+    }
 
-        // .modal {
-        //     .modal-dialog {
-        //         display: flex;
-        //         top: 10vh;
-        //         height: 70vh;
+    @media screen and (min-width: 868px) {
+        article {
+            padding: 40px 80px;
+            > h1 {
+                font-size: 3rem;
+                margin-bottom: 40px;
+            }
 
-        //         width: 70vw;
-        //         max-width: none;
+            #portfolio {
+                display: flex;
 
-        //         .modal-content {
-        //             background-color: #064460;
-        //             box-shadow: 5px 5px 5px rgba($color: #000, $alpha: 0.1);
-        //             border-radius: 15px;
-        //             padding: 20px;
-        //             position: relative;
+                #timeline-vertical {
+                    display: block;
+                    background-color: #fff;
+                    min-width: 3px;
+                    border-radius: 3px;
+                    height: 100%;
+                }
 
-        //             .modal-contents {
-        //                 max-height: 55vh;
+                #timeline-content {
+                    .hr {
+                        display: none;
+                    }
 
-        //                 .modal-info {
-        //                     ul {
-        //                         list-style: none;
-        //                         padding: 20px;
-        //                         font-size: 22px;
-        //                         height: 100%;
-        //                         border-radius: 15px;
+                    .timeline-item {
+                        display: flex;
+                        justify-content: start;
+                        margin-bottom: 40px;
 
-        //                         background-color: rgba(
-        //                             $color: #fff,
-        //                             $alpha: 0.25
-        //                         );
+                        .timeline-horizontal {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-right: 30px;
 
-        //                         span:first-child {
-        //                             font-weight: bold;
+                            .timeline-horizontal-text {
+                                margin-bottom: 5px;
+                                text-align: center;
+                            }
 
-        //                             > a {
-        //                                 color: #fff;
-        //                             }
+                            .timeline-horizontal-bar {
+                                background-color: #fff;
+                                height: 3px;
+                                border-top-right-radius: 3px;
+                                border-bottom-right-radius: 3px;
+                            }
+                        }
 
-        //                             > a:hover {
-        //                                 color: black;
-        //                             }
-        //                         }
-        //                     }
+                        .timeline-activity {
+                            max-width: 50vw;
 
-        //                     .modal-under-photo {
-        //                         margin-top: 10px;
-        //                     }
-        //                 }
+                            > div:first-of-type {
+                                > h3 {
+                                    font-size: 1.4rem;
+                                }
 
-        //                 .modal-photos {
-        //                     img {
-        //                         height: 55vh;
-        //                         width: auto;
-        //                     }
+                                .used-technologies {
+                                    p {
+                                        font-size: 1rem;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
 
-        //                     #plennert-photos {
-        //                         display: flex;
-        //                         justify-content: space-around;
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+                            > p {
+                                font-size: 1rem;
+                            }
+
+                            > .more-info-button {
+                                text-align-last: left;
+                            }
+
+                            .modal {
+                                .modal-dialog {
+                                    min-width: 700px;
+
+                                    .modal-content {
+                                        background-color: #064460;
+                                        box-shadow: 5px 5px 5px
+                                            rgba($color: #000, $alpha: 0.1);
+                                        border-radius: 15px;
+                                        padding: 20px;
+
+                                        .modal-body {
+                                            .modal-contents {
+                                                ul {
+                                                    li {
+                                                        font-size: 1.2rem;
+
+                                                        span {
+                                                            font-size: 1.2rem;
+                                                        }
+
+                                                        ul {
+                                                            padding-left: 30px;
+                                                        }
+                                                    }
+                                                }
+
+                                                div > ul > li {
+                                                    margin-bottom: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #timeline-item-treasure_hunt {
+                > .timeline-horizontal {
+                    min-width: 15vw;
+                }
+
+                .modal {
+                    .modal-contents {
+                        .modal-info {
+                            padding-right: 30px;
+                        }
+
+                        .carousel-item > img {
+                            min-height: 523px;
+                        }
+                    }
+                }
+            }
+
+            #timeline-item-ypto_hackathon {
+                > .timeline-horizontal {
+                    min-width: 20vw;
+                }
+
+                .modal {
+                    .modal-contents {
+                        div:last-of-type {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+
+            #timeline-item-elementalstones {
+                > .timeline-horizontal {
+                    min-width: 35vw;
+                }
+            }
+
+            #timeline-item-plennert {
+                > .timeline-horizontal {
+                    min-width: 25vw;
+                }
+
+                .modal {
+                    img {
+                        min-height: 402px;
+                    }
+                }
+            }
+
+            #timeline-item-htf {
+                > .timeline-horizontal {
+                    min-width: 20vw;
+                }
+            }
+
+            #timeline-item-pokeplayer {
+                > .timeline-horizontal {
+                    min-width: 30vw;
+                }
+
+                .modal {
+                    .modal-dialog {
+                        .modal-content {
+                            min-width: 750px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        article {
+            #timeline-item-htf {
+                > .timeline-horizontal {
+                    min-width: 15vw;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        article {
+            padding: 40px 100px;
+
+            .timeline-item {
+                margin-bottom: 100px !important;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        article {
+            padding: 40px 180px 40px 100px;
+
+            #timeline-vertical {
+                margin-left: 90px;
+            }
+
+            #timeline-arrow {
+                position: relative;
+                margin-left: 90px;
+
+                i {
+                    position: absolute;
+                    top: -7px;
+                    left: 3px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }

@@ -575,6 +575,9 @@ img {
 #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div:first-of-type .used-technologies > p {
   margin-right: 5px;
   font-size: 0.8rem;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > p {
   font-size: 0.8rem;
@@ -606,51 +609,224 @@ img {
   width: 100vw;
   margin: 20px -20px 30px -20px;
 }
+#page1 article #timeline-arrow {
+  position: relative;
+}
+#page1 article #timeline-arrow i {
+  position: absolute;
+  top: -7px;
+  left: 3px;
+  font-size: 1.5rem;
+}
 #page1 footer {
   margin-top: 100px;
 }
 #page1 footer p {
   font-size: 0.8rem;
 }
-#portfolio {
-  display: flex;
+@media screen and (min-width: 576px) {
+  #page1 article #timeline-content {
+    margin-bottom: 70px;
+  }
+  #page1 article .modal .modal-dialog .modal-content {
+    background-color: #064460;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents ul {
+    list-style: none;
+    padding: 0;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents ul li {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents ul li span {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents ul li span a {
+    color: #fff;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents ul li span:first-of-type {
+    font-weight: bold;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents ul li ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents > div:first-of-type {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 0 20px;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents > div:first-of-type > ul > li {
+    margin-bottom: 7px;
+  }
+  #page1 article .modal .modal-dialog .modal-content .modal-body .modal-contents > div:last-of-type {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+  }
+  #page1 article #timeline-item-treasure_hunt .modal .modal-contents .carousel-item > img {
+    min-height: 373px;
+  }
+  #page1 article #timeline-item-ypto_hackathon .modal .modal-contents div:last-of-type {
+    padding-left: 0;
+  }
+  #page1 article #timeline-item-plennert .modal img {
+    min-height: 402px;
+  }
 }
-#portfolio #timeline-vertical {
-  background-color: #fff;
-  width: 1px;
-  height: 100%;
+@media screen and (min-width: 868px) {
+  #page1 article {
+    padding: 40px 80px;
+  }
+  #page1 article > h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  #page1 article #portfolio {
+    display: flex;
+  }
+  #page1 article #portfolio #timeline-vertical {
+    display: block;
+    background-color: #fff;
+    min-width: 3px;
+    border-radius: 3px;
+    height: 100%;
+  }
+  #page1 article #portfolio #timeline-content .hr {
+    display: none;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-horizontal .timeline-horizontal-text {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-horizontal .timeline-horizontal-bar {
+    background-color: #fff;
+    height: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity {
+    max-width: 50vw;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div:first-of-type > h3 {
+    font-size: 1.4rem;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > div:first-of-type .used-technologies p {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > p {
+    font-size: 1rem;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > .more-info-button {
+    text-align-last: left;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity .modal .modal-dialog {
+    min-width: 700px;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity .modal .modal-dialog .modal-content {
+    background-color: #064460;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity .modal .modal-dialog .modal-content .modal-body .modal-contents ul li {
+    font-size: 1.2rem;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity .modal .modal-dialog .modal-content .modal-body .modal-contents ul li span {
+    font-size: 1.2rem;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity .modal .modal-dialog .modal-content .modal-body .modal-contents ul li ul {
+    padding-left: 30px;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity .modal .modal-dialog .modal-content .modal-body .modal-contents div > ul > li {
+    margin-bottom: 15px;
+  }
+  #page1 article #timeline-item-treasure_hunt > .timeline-horizontal {
+    min-width: 15vw;
+  }
+  #page1 article #timeline-item-treasure_hunt .modal .modal-contents .modal-info {
+    padding-right: 30px;
+  }
+  #page1 article #timeline-item-treasure_hunt .modal .modal-contents .carousel-item > img {
+    min-height: 523px;
+  }
+  #page1 article #timeline-item-ypto_hackathon > .timeline-horizontal {
+    min-width: 20vw;
+  }
+  #page1 article #timeline-item-ypto_hackathon .modal .modal-contents div:last-of-type {
+    padding-left: 0;
+  }
+  #page1 article #timeline-item-elementalstones > .timeline-horizontal {
+    min-width: 35vw;
+  }
+  #page1 article #timeline-item-plennert > .timeline-horizontal {
+    min-width: 25vw;
+  }
+  #page1 article #timeline-item-plennert .modal img {
+    min-height: 402px;
+  }
+  #page1 article #timeline-item-htf > .timeline-horizontal {
+    min-width: 20vw;
+  }
+  #page1 article #timeline-item-pokeplayer > .timeline-horizontal {
+    min-width: 30vw;
+  }
+  #page1 article #timeline-item-pokeplayer .modal .modal-dialog .modal-content {
+    min-width: 750px;
+    margin: 0;
+  }
 }
-#portfolio .timeline-item {
-  display: flex;
-  justify-content: start;
+@media screen and (min-width: 992px) {
+  #page1 article #timeline-item-htf > .timeline-horizontal {
+    min-width: 15vw;
+  }
 }
-#portfolio .timeline-item .timeline-horizontal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  #page1 article {
+    padding: 40px 100px;
+  }
+  #page1 article .timeline-item {
+    margin-bottom: 100px !important;
+  }
 }
-#portfolio .timeline-item .timeline-horizontal .timeline-horizontal-text {
-  margin-bottom: 5px;
-  text-align: center;
-}
-#portfolio .timeline-item .timeline-horizontal .timeline-horizontal-bar {
-  background-color: #fff;
-  height: 1px;
-}
-#portfolio .timeline-item #id1 {
-  width: 10vw;
-}
-#portfolio .timeline-item #id2 {
-  width: 30vw;
-}
-#portfolio .timeline-item #id3 {
-  width: 20vw;
-}
-#portfolio .timeline-item .timeline-activity .used-technologies p {
-  padding: 0 5px;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.25);
+@media screen and (min-width: 1400px) {
+  #page1 article {
+    padding: 40px 180px 40px 100px;
+  }
+  #page1 article #timeline-vertical {
+    margin-left: 90px;
+  }
+  #page1 article #timeline-arrow {
+    position: relative;
+    margin-left: 90px;
+  }
+  #page1 article #timeline-arrow i {
+    position: absolute;
+    top: -7px;
+    left: 3px;
+    font-size: 1.5rem;
+  }
 }
 
 #page2 {
