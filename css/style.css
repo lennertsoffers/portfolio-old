@@ -216,6 +216,26 @@
     height: 0vh;
   }
 }
+@keyframes timeline-fade-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes timeline-fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -614,9 +634,9 @@ img {
 }
 #page1 article #timeline-arrow i {
   position: absolute;
-  top: -7px;
-  left: 3px;
-  font-size: 1.5rem;
+  top: -9px;
+  left: 0px;
+  font-size: 2rem;
 }
 #page1 footer {
   margin-top: 100px;
@@ -682,6 +702,9 @@ img {
   #page1 article #timeline-item-plennert .modal img {
     min-height: 402px;
   }
+  #page1 article #timeline-item-pokeplayer .modal .modal-contents .carousel-item > img {
+    height: 200px;
+  }
 }
 @media screen and (min-width: 868px) {
   #page1 article {
@@ -689,7 +712,7 @@ img {
   }
   #page1 article > h1 {
     font-size: 3rem;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
   #page1 article #portfolio {
     display: flex;
@@ -697,17 +720,17 @@ img {
   #page1 article #portfolio #timeline-vertical {
     display: block;
     background-color: #fff;
-    min-width: 3px;
-    border-radius: 3px;
+    min-width: 5px;
+    border-radius: 10px;
     height: 100%;
   }
   #page1 article #portfolio #timeline-content .hr {
-    display: none;
+    background-color: transparent;
+    height: 40px;
   }
   #page1 article #portfolio #timeline-content .timeline-item {
     display: flex;
     justify-content: start;
-    margin-bottom: 40px;
   }
   #page1 article #portfolio #timeline-content .timeline-item .timeline-horizontal {
     display: flex;
@@ -721,7 +744,7 @@ img {
   }
   #page1 article #portfolio #timeline-content .timeline-item .timeline-horizontal .timeline-horizontal-bar {
     background-color: #fff;
-    height: 3px;
+    height: 5px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }
@@ -740,6 +763,31 @@ img {
   }
   #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > .more-info-button {
     text-align-last: left;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > .more-info-button > a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > .more-info-button > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: translate3d(-105%, 0, 0);
+  }
+  #page1 article #portfolio #timeline-content .timeline-item .timeline-activity > .more-info-button a:hover::after,
+#page1 article #portfolio #timeline-content .timeline-item .timeline-activity > .more-info-button a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
   #page1 article #portfolio #timeline-content .timeline-item .timeline-activity .modal .modal-dialog {
     min-width: 700px;
@@ -806,8 +854,8 @@ img {
   #page1 article {
     padding: 40px 100px;
   }
-  #page1 article .timeline-item {
-    margin-bottom: 100px !important;
+  #page1 article .hr {
+    min-height: 100px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -818,14 +866,11 @@ img {
     margin-left: 90px;
   }
   #page1 article #timeline-arrow {
-    position: relative;
     margin-left: 90px;
   }
   #page1 article #timeline-arrow i {
-    position: absolute;
-    top: -7px;
-    left: 3px;
-    font-size: 1.5rem;
+    top: -9px;
+    left: 0px;
   }
 }
 
