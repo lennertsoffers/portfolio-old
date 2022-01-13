@@ -23,6 +23,9 @@ const ExtraInfoSmall = (function () {
                     $(e.target).parents("div.timeline-activity").find(".modal")
                 );
                 modal.show();
+                $(".modal").click(() => {
+                    modal.hide();
+                });
             }
         });
     }

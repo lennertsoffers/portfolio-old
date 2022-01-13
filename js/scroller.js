@@ -1,6 +1,5 @@
 const Scroller = (function () {
     let root = document.documentElement;
-    let from = 0;
     let to = 0;
     let page = 0;
     let amountOfPages = undefined;

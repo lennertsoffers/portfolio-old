@@ -54,9 +54,16 @@
             display: flex;
             justify-content: center;
 
-            > a > img {
+            > img {
                 width: 100%;
             }
+        }
+    }
+
+    footer {
+        margin-top: 100px;
+        p {
+            font-size: 0.8rem;
         }
     }
 
@@ -75,7 +82,7 @@
             }
 
             > .cv-wrapper {
-                > a > img {
+                > img {
                     max-width: 600px;
                 }
             }

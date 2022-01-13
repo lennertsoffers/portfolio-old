@@ -20,7 +20,7 @@ const ViewContents = (function () {
                             "none";
                         document.getElementById(
                             "navbarNav"
-                        ).style.backgroundColor = "#04283a";
+                        ).style.backgroundColor = "#222";
                     }, 700);
                 }
 
@@ -50,7 +50,7 @@ const ViewContents = (function () {
                         )
                     ) {
                         document.querySelector("nav").style.paddingRight =
-                            "15px";
+                            "13px";
                     }
                 }, 700);
             });

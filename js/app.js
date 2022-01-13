@@ -7,6 +7,12 @@ TimelineAnimation.init();
 CreateNav.hideSmallNavInstant();
 TimelineAnimation.setOpacity();
 
+const toast = new bootstrap.Toast(document.getElementById("toast"));
+toast.show();
+setTimeout(() => {
+    toast.hide();
+}, 2500);
+
 $(window).resize(() => {
     CreateNav.hideSmallNavInstant();
     TimelineAnimation.setOpacity();
@@ -19,6 +25,10 @@ $(window).resize(() => {
         }
     }
 });
+
+const footerText = $(".footer-text");
+const year = new Date().getFullYear();
+footerText.text("©lennertsoffers - " + year);
 
 if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
