@@ -4,7 +4,7 @@ const CreateNav = (function () {
         const navUl = document.getElementById("nav-items");
 
         let pageNum = 0;
-        document.querySelectorAll("#pages div>h1").forEach((e) => {
+        document.querySelectorAll(".page-scroll h1").forEach((e) => {
             navUl.innerHTML += `<li class="nav-item">
                     <a class="nav-link" aria-current="page" data-page="${pageNum}" href="#">${e.innerText}</a>
                 </li>`;
