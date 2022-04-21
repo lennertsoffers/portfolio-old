@@ -59,6 +59,21 @@
                 }
             }
 
+                                .icons {
+                                    text-align: center;
+                                
+                                    > a {
+                                        font-size: 40px !important;
+                                        text-decoration: none !important;
+                                    }
+
+                                    > a:hover {
+                                        > i {
+                                            color: #232322 !important;
+                                        }
+                                    }
+                                }
+
             footer {
                 font-size: 0.8rem;
             }

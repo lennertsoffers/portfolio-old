@@ -378,6 +378,16 @@ img {
 #page0 .page-content > div article section:nth-of-type(2) > ul > li:last-of-type {
   justify-content: end;
 }
+#page0 .page-content > div .icons {
+  text-align: center;
+}
+#page0 .page-content > div .icons > a {
+  font-size: 40px !important;
+  text-decoration: none !important;
+}
+#page0 .page-content > div .icons > a:hover > i {
+  color: #232322 !important;
+}
 #page0 .page-content > div footer {
   font-size: 0.8rem;
 }
