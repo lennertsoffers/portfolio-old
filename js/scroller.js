@@ -6,7 +6,7 @@ const Scroller = (function () {
     let scrolling = false;
 
     function enable() {
-        amountOfPages = document.getElementById("pages").childElementCount;
+        amountOfPages = $(".page").length;
         document.body.style.overflowY = "hidden";
         document.addEventListener("wheel", _scrollCallback);
         document.querySelectorAll(".page-scroll>div").forEach((e) => {
