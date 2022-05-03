@@ -1,3 +1,23 @@
+.link {
+    cursor: pointer;
+}
+
+.link span:hover {
+    color: #232322 !important;
+
+    >i {
+        color: #232322 !important;
+    }
+}
+
+.link a:hover {
+    color: #232322 !important;
+}
+
+.page-scroll {
+    cursor: pointer;
+}
+
 .page-content {
     display: none;
     article {

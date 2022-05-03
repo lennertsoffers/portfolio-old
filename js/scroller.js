@@ -6,6 +6,10 @@ const Scroller = (function () {
     let scrolling = false;
 
     function enable() {
+        window.addEventListener("touchmove", _preventMotion, {
+            passive: false,
+        });
+
         amountOfPages = $(".page").length;
         document.body.style.overflowY = "hidden";
         document.addEventListener("wheel", _scrollCallback);
@@ -75,11 +79,17 @@ const Scroller = (function () {
     }
 
     function disable() {
+        window.removeEventListener("touchmove", _preventMotion);
+
         document.removeEventListener("wheel", _scrollCallback);
     }
 
     function getPage() {
         return page;
+    }
+
+    function _preventMotion(e) {
+        e.preventDefault();
     }
 
     return {

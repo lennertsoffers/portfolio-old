@@ -454,6 +454,12 @@
                 }
             }
 
+            #timeline-item-reminder {
+                > .timeline-horizontal {
+                    min-width: 20vw;
+                }
+            }
+
             #timeline-arrow {
                 display: block !important;
             }
